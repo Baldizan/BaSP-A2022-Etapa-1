@@ -9,6 +9,10 @@
 
 >This week's goal is to recreate the __landing page__ of last week's Figma design.
 
+## Week 03
+
+>This week's goal is to recreate the __landing page__ of last week's Figma design with CSS.
+
 ## Authors
 
 *Mariana Alvarez Baldizan*

@@ -1,0 +1,21 @@
+img {
+width: 50px;
+}
+
+.topbar {
+    display: inline-block;
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+    background-color: #373867;
+}
+
+ul.topbar-nav li {
+    float: right;
+    padding: 7.29px;
+    list-style: none
+    }
+
+.topbar-nav li img {
+    border-radius: 50%;
+    }
