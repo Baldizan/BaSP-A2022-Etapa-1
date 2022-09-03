@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix by Radium&nbsp;Rocket</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -36,13 +39,12 @@
                 </li>
             </ul>
         </header>
-        <aside class="sidebar">
-                <header>
-                    <h2>Menu</h2>
-                </header>
+        <aside class="sidebar" id="sidebar">
+            <article>
+                <h2>Menu</h2 id="sidebar-menu">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="" class="sidebar-home">Home</a>
                     </li>
                     <li>
                         <a href="">Sign Up</a>
@@ -54,17 +56,18 @@
                         <a href="">About us</a>
                     </li>
                 </ul>
+            </article>
             <article>
                 <h2>Get in touch</h2>
-                <p>
+                    <p>
                     Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem
                     ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus
                     aliquam.
-                </p>
+                    </p>
                 <address>
                     <ul>
                         <li>
-                            <a href="mailto:Contact@Trackgenix.com">&#128231; Contact@Trackgenix.com</a>
+                            <a href="mailto:Contact@Trackgenix.com">&#128231;&nbsp;Contact@Trackgenix.com</a>
                         </li>
                         <li>
                             <a href="tel:(000) 000-0000">&#128222; (000) 000-0000</a>
@@ -86,7 +89,7 @@
                     repellendus, consectetur dignissimos totam beatae recusandae aut iste quidem, at nemo!
                     Esse cum in explicabo ipsam dolorum harum?
                 </p>
-                <button>Learn More</button>
+                <a href="">Learn More</a>
                 <img src="img/light-img-sec1.jpg" alt="Some fancy inspiring artwork">
             </article>
             <article>
@@ -172,15 +175,15 @@
                     <input id="rsi-email" type="email">
                     <label for="rsi-msg">Message</label>
                     <textarea id="rsi-msg" form="rsi-form" cols="60" rows="6"></textarea>
-                    <div>
-                        <p>Contact area</p>
-                        <input id="rsi-hr" type="radio" name="contact">
-                        <label for="rsi-hr">Human resources</label>
-                        <input id="rsi-systems" type="radio" name="contact">
-                        <label for="rsi-systems">Systems</label>
-                        <input id="rsi-commercial" type="radio" name="contact">
-                        <label for="rsi-commercial">Commercial</label>
-                    </div>
+                <fieldset>
+                    <p>Contact area</p>
+                    <input id="rsi-hr" type="radio" name="contact">
+                    <label for="rsi-hr">Human resources</label>
+                    <input id="rsi-systems" type="radio" name="contact">
+                    <label for="rsi-systems">Systems</label>
+                    <input id="rsi-commercial" type="radio" name="contact">
+                    <label for="rsi-commercial">Commercial</label>
+                </fieldset>
                 </fieldset>
                 <button>Reset</button>
                 <button type="submit">Submit</button>
