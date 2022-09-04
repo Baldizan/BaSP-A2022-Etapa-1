@@ -82,6 +82,7 @@ body {
     top: 90px;
     min-width: 220px;
     max-width: 275px;
+    height: auto;
     width: 20%;
     background-color: #DFE4DE;
     border-radius: 0px 0px 15px 15px;    
@@ -102,7 +103,7 @@ body {
     font-size: 15px;
 }
 .sidebar>article>h2 {
-    margin: 41px 18px 18px 7px;
+    margin: 25px 18px 18px 7px;
     font-size: 15px;
     font-weight: bold;
     text-decoration: underline;
@@ -123,7 +124,6 @@ body {
     font-family: "Inter";
 }
 
-
 /*-----------------SIDE. BAR-------------------*/
 
 /*-----------------MAIN-------------------*/
@@ -135,7 +135,7 @@ body {
 
 .trackgenix-byRR>section {
     border-bottom: 2px solid #373867;
-    height: 500px;
+    height: 450px;
 }
 
 .trackgenix-byRR span {
@@ -173,21 +173,67 @@ body {
     }
 
 .trackgenix-byRR p {
-    width: 100%;
+    width: 80%;
     margin: 2%;
-    margin-bottom: 65px;
+    margin-bottom: 120px;
         }
          
 .trackgenix-byRR>section>a {
     background-color: #FFF;
     border: 2px solid #373867;
     border-radius: 5px;
-    margin: 0px 0px 0px 350px;
+    margin: 0px 0px 0px 560px;
     padding: 10px 20px;
     text-transform: uppercase;
     }
 
+.services {
+    border-bottom: 2px solid #373867;
+    /* height: 450px; */
+    }
 
+.services h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 8px;
+}
+
+.services>section {
+    display: inline-block;
+    width: 50%;
+}
+
+.hours-reg {
+    display: inline-block;
+    width: 40%;
+    }
+.reports {
+    display: inline-block;
+    width: 50%;
+    }
+.hours-reg {
+    display: inline-block;
+    width: 40%;
+    }
+.reports {
+    display: inline-block;
+    width: 50%;
+    }
+.resources {
+    display: inline-block;
+    width: 40%;
+    }
+.roles {
+    display: inline-block;
+    width: 50%;
+    }
+.services-img {
+    position:inherit;
+    float: left;
+    width: 50%;
+    margin: 0%;
+}
 
 /*-----------------MAIN-------------------*/
 
