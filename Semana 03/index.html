@@ -189,20 +189,23 @@
             <form id="rsi-form" class="info-form">
                 <h2>Request system information</h2>
                 <div class="fs-user-info">
-                    <fieldset>
-                        <div class="form-user-name">
-                            <label for="rsi-name" class="user-info">Name</label>
-                            <input id="rsi-name" type="text" class="user-info">
-                        </div>
-                        <div class="form-user-email">
-                            <label for="rsi-email" class="user-info">Email</label>
-                            <input id="rsi-email" type="email" class="user-info">
-                        </div>
-                            <label for="rsi-msg" class="user-msg">Message</label>
-                            <textarea id="rsi-msg" form="rsi-form" cols="60" rows="8" class="user-msg"></textarea>
+                    <fieldset class="form-user-info">
+                            <div class="user-name">
+                                <label for="rsi-name">Name</label>
+                                <input id="rsi-name" type="text">
+                            </div>
+                            <div class="user-email">
+                                <label for="rsi-email">Email</label>
+                                <input id="rsi-email" type="email">
+                            </div>
+                    </fieldset>
+                    <fieldset class="form-msg">
+                            <label for="rsi-msg">Message</label>
+                            <textarea id="rsi-msg" form="rsi-form" cols="60" rows="4"></textarea>
+                    </fieldset>
                     </fieldset>
                 </div>
-                <div>
+                <div class="contact-area">
                     <fieldset>
                         <p>Contact area</p>
                         <input id="rsi-hr" type="radio" name="contact">
@@ -212,30 +215,34 @@
                         <input id="rsi-commercial" type="radio" name="contact">
                         <label for="rsi-commercial">Commercial</label>
                     </fieldset>
+                    <button class="button-reset">Reset</button>
+                    <button type="submit" class="button-submit">Submit</button>
                 </div>
-                <button>Reset</button>
-                <button type="submit">Submit</button>
             </form>
-            <article>
+            <article class="our-story">
                 <h2>Our story</h2>
                 <section aria-labelledby="our-story-hero">
-                    <h3 id="our-story-hero">An easy system</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex perspiciatis illo deserunt
-                        voluptatum necessitatibus quod illum non similique odit consectetur.
-                    </p>
+                    <div class="system-story">
+                        <img src="img/stock-our-story.png" alt="A cheerful team" class="story-img">
+                        <h3 id="our-story-hero">An easy system</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, whenan unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
                 </section>
-                <img src="img/stock-our-story.png" alt="A cheerful team">
                 <section aria-labelledby="our-story-cont">
-                    <h3 id="our-story-cont">Our goals</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet totam earum vitae
-                        aut modi distinctio, reprehenderit numquam quisquam nam!
+                    <h3 id="our-story-cont" class="our-goals-h3">Our goals</h3>
+                    <p class="our-story-p">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
                     </p>
                 </section>
             </article>
-            <section aria-labelledby="navigation">
-                <div id="navigation">
+            <section aria-labelledby="navigation" class="bottom-nav">
+                <div id="navigation" class="bottom-nav-sections">
                     <h2>Products</h2>
                     <ul>
                         <li>
@@ -252,7 +259,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="bottom-nav-sections">
                     <h2>Company</h2>
                     <ul>
                         <li>
@@ -269,7 +276,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="bottom-nav-sections">
                     <h2>Support</h2>
                     <ul>
                         <li>
