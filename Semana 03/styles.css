@@ -2,9 +2,13 @@ h1 {
     font-size: 40px;
 }
 h2 {
+<<<<<<< HEAD
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
+=======
+    font-size: 30px;
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 }
 h3 {
     font-size: 25px;
@@ -15,11 +19,14 @@ a {
     color: #373867;
 }
 
+<<<<<<< HEAD
 label {
     font-size: 14px;
     font-weight:500;
 }
 
+=======
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 /*-----------------BODY-------------------*/
 
 body {
@@ -39,12 +46,26 @@ body {
 /*-----------------NAV. BAR-------------------*/
 .topbar {
     position: fixed;
+<<<<<<< HEAD
     top: 0;
     border-radius: 0px 0px 15px 15px;
     width: 100%;
     max-height: 90px;
     background-color: #373867;
     z-index: 1;
+=======
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 90px;
+    background-color: #373867;
+    z-index: 1;
+    
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 }
 
 .topbar-nav {
@@ -54,6 +75,10 @@ body {
 
 .topbar-nav>li {
     float: right;
+<<<<<<< HEAD
+=======
+    margin: 20px;
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
     list-style: none;
     margin: 20px 12px 30px 30px;
     max-width: 2px;
@@ -67,12 +92,20 @@ body {
 
 .topbar>a>.logo {
     max-width: 320px;
+<<<<<<< HEAD
+=======
+    min-width: 320px;
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
     float: left;
     margin: 12px 30px 30px 30px;
 }
 
 #topbar-contact {
+<<<<<<< HEAD
     margin-right: 50px;
+=======
+    margin-right: 50px;    
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 }
 /*-----------------NAV. BAR-------------------*/
 
@@ -82,10 +115,19 @@ body {
     top: 90px;
     min-width: 220px;
     max-width: 275px;
+<<<<<<< HEAD
     width: 20%;
     background-color: #DFE4DE;
     border-radius: 0px 0px 15px 15px;
     margin-left: 20px;
+=======
+    height: auto;
+    width: 20%;
+    background-color: #DFE4DE;
+    border-radius: 0px 0px 15px 15px;    
+    margin-left: 20px;
+    padding: 0.5%;
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 }
 
 .sidebar>* {
@@ -122,6 +164,7 @@ body {
     font-family: "Inter";
 }
 
+<<<<<<< HEAD
 .contact-address {
     display: inline-block;
     width: 80%;
@@ -131,6 +174,8 @@ body {
     float: right;
     width:90%;
 }
+=======
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 /*-----------------SIDE. BAR-------------------*/
 
 /*-----------------MAIN-------------------*/
@@ -143,19 +188,32 @@ body {
 .trackgenix-byRR>section {
     border-bottom: 2px solid #373867;
     height: 450px;
+<<<<<<< HEAD
     max-width: 2936px;
     min-width: fit-content;
+=======
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 }
 
 .trackgenix-byRR span {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
+.why-trackgenix img {
+    width: 50px; 
+}
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 
 .trackgenix-byRR>section>div {
     float: left;
     width: 50%;
+<<<<<<< HEAD
 }
+=======
+    }
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 
 .trackgenix-byRR img {
     float: right;
@@ -164,18 +222,28 @@ body {
     position: relative;
     top: 30px;
     margin-right: 30px;
+<<<<<<< HEAD
 }
 
 .trackgenix-byRR h1 {
     width: 100%;
     margin: 2%;
 }
+=======
+    } 
+    
+.trackgenix-byRR h1 {
+    width: 100%;
+    margin: 2%;
+    }
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 .trackgenix-byRR h3 {
     position:initial;
     width: 100%;
     margin: 2%;
     margin-bottom: 70px;
     text-transform: uppercase;
+<<<<<<< HEAD
 }
 
     .trackgenix-byRR p {
@@ -184,6 +252,16 @@ body {
     margin-bottom: 120px;
 }
 
+=======
+    }
+
+.trackgenix-byRR p {
+    width: 80%;
+    margin: 2%;
+    margin-bottom: 120px;
+        }
+         
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 .trackgenix-byRR>section>a {
     background-color: #FFF;
     border: 2px solid #373867;
@@ -191,6 +269,7 @@ body {
     margin: 0px 0px 0px 560px;
     padding: 10px 20px;
     text-transform: uppercase;
+<<<<<<< HEAD
 }
 
 .services {
@@ -198,11 +277,20 @@ body {
     height: 450px;
     min-width: 100vw;
 }
+=======
+    }
+
+.services {
+    border-bottom: 2px solid #373867;
+    /* height: 450px; */
+    }
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 
 .services h2 {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: bold;
+<<<<<<< HEAD
     margin: 30px 10px 60px 0px;
 }
 
@@ -210,10 +298,14 @@ body {
     border-bottom: 1px solid #373867;
     margin-bottom: 20px;
     width: 60%;
+=======
+    margin: 20px 8px;
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 }
 
 .services>section {
     display: inline-block;
+<<<<<<< HEAD
     width: 40%;
 }
 
@@ -307,6 +399,42 @@ fieldset {
 }
 
 
+=======
+    width: 50%;
+}
+
+.hours-reg {
+    display: inline-block;
+    width: 40%;
+    }
+.reports {
+    display: inline-block;
+    width: 50%;
+    }
+.hours-reg {
+    display: inline-block;
+    width: 40%;
+    }
+.reports {
+    display: inline-block;
+    width: 50%;
+    }
+.resources {
+    display: inline-block;
+    width: 40%;
+    }
+.roles {
+    display: inline-block;
+    width: 50%;
+    }
+.services-img {
+    position:inherit;
+    float: left;
+    width: 50%;
+    margin: 0%;
+}
+
+>>>>>>> b0ee55b75ad4acbe5513447849eaa299c7e8a58c
 /*-----------------MAIN-------------------*/
 
 /*-----------------FOOTER-------------------*/
