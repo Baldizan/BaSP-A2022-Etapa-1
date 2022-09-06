@@ -1,0 +1,316 @@
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h3 {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #373867;
+}
+
+label {
+    font-size: 14px;
+    font-weight:500;
+}
+
+/*-----------------BODY-------------------*/
+
+body {
+    position:relative;
+    color: #373867;
+    font-family: "Roboto";
+    max-width: 100vw;
+}
+
+ p {
+    font-weight: 100;
+}
+
+/*-----------------BODY-----------------
+
+
+/*-----------------NAV. BAR-------------------*/
+.topbar {
+    position: fixed;
+    top: 0;
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    max-height: 90px;
+    background-color: #373867;
+    z-index: 1;
+}
+
+.topbar-nav {
+    padding-right: 2px;
+    padding-top: 1.5px;
+}
+
+.topbar-nav>li {
+    float: right;
+    list-style: none;
+    margin: 20px 12px 30px 30px;
+    max-width: 2px;
+    min-width: 2px;
+}
+
+.topbar-nav li img {
+    border-radius: 50%;
+    max-width: 40px;
+}
+
+.topbar>a>.logo {
+    max-width: 320px;
+    float: left;
+    margin: 12px 30px 30px 30px;
+}
+
+#topbar-contact {
+    margin-right: 50px;
+}
+/*-----------------NAV. BAR-------------------*/
+
+/*-----------------SIDE. BAR-------------------*/
+.sidebar {
+    position: fixed;
+    top: 90px;
+    min-width: 220px;
+    max-width: 275px;
+    width: 20%;
+    background-color: #DFE4DE;
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 20px;
+}
+
+.sidebar>* {
+    margin: 7px;
+}
+
+.sidebar-home {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.sidebar-list {
+    font-size: 15px;
+}
+.sidebar>article>h2 {
+    margin: 25px 18px 18px 7px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Inter";
+}
+
+.sidebar>article li {
+    font-family: "Roboto";
+}
+
+.sidebar p {
+    margin: 0px 18px 18px 7px;
+    font-size: 12px;
+}
+.sidebar ul>li {
+    margin: 0px 18px 18px 7px;
+    font-size: 12px;
+    font-family: "Inter";
+}
+
+.contact-address {
+    display: inline-block;
+    width: 80%;
+}
+
+.contact-somewhere {
+    float: right;
+    width:90%;
+}
+/*-----------------SIDE. BAR-------------------*/
+
+/*-----------------MAIN-------------------*/
+.main-section {
+    position:inherit;
+    max-width: 100vw;
+    margin: 120px 40px 20px 350px;
+}
+
+.trackgenix-byRR>section {
+    border-bottom: 2px solid #373867;
+    height: 450px;
+    max-width: 2936px;
+    min-width: fit-content;
+}
+
+.trackgenix-byRR span {
+    font-weight: bold;
+}
+
+
+.trackgenix-byRR>section>div {
+    float: left;
+    width: 50%;
+}
+
+.trackgenix-byRR img {
+    float: right;
+    width: 550px;
+    max-width: 50%;
+    position: relative;
+    top: 30px;
+    margin-right: 30px;
+}
+
+.trackgenix-byRR h1 {
+    width: 100%;
+    margin: 2%;
+}
+.trackgenix-byRR h3 {
+    position:initial;
+    width: 100%;
+    margin: 2%;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+    .trackgenix-byRR p {
+        width: 80%;
+        margin: 2%;
+    margin-bottom: 120px;
+}
+
+.trackgenix-byRR>section>a {
+    background-color: #FFF;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    margin: 0px 0px 0px 560px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.services {
+    border-bottom: 2px solid #373867;
+    height: 450px;
+    min-width: 100vw;
+}
+
+.services h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 10px 60px 0px;
+}
+
+.services h3 {
+    border-bottom: 1px solid #373867;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.services>section {
+    display: inline-block;
+    width: 40%;
+}
+
+.services p {
+    width: 50%;
+}
+
+.services-sections {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+.serv-sections-text {
+    float: right;
+    width: 80%;
+    padding: 2px;
+}
+
+.why-trackgenix {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.why-trackgenix section{
+    display: inline-block;
+    position: relative;
+    left: 1%;
+    width: 45%;
+}
+
+.why-trackgenix h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 10px 60px 0px;
+}
+
+.why-trackgenix img {
+    width: 600px;
+}
+
+.why-trackgenix div {
+    width: 90%;
+}
+.why-trackgenix p {
+    width: 80%;
+    white-space: normal;
+}
+
+.why-trackgenix button {
+    background-color: #FFF;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    margin: 50px 0px 20px 190px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+/* .info-form h2 {
+    margin: 30px 10px 60px 0px;
+}
+
+.fs-user-info fieldset {
+    width: 100%;
+}
+
+.user-info {
+    display: block
+
+}
+*/
+
+fieldset {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.user-msg {
+    resize: none;
+    width: 50%;
+    float: right;
+}
+
+.user-info {
+    width: 50%;
+}
+
+.form-user.name {
+    width: 50%;
+}
+
+
+/*-----------------MAIN-------------------*/
+
+/*-----------------FOOTER-------------------*/
+.footer img {
+    width: 50px;
+}
+/*-----------------FOOTER-------------------*/
