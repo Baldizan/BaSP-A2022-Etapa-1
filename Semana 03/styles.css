@@ -19,7 +19,6 @@ label {
     font-size: 14px;
     font-weight:500;
 }
-
 /*-----------------BODY-------------------*/
 
 body {
@@ -111,12 +110,13 @@ form h2 {
 .sidebar-list {
     font-size: 15px;
 }
-.sidebar>article>h2 {
+#sidebar>article>h2 {
     margin: 25px 18px 18px 7px;
     font-size: 15px;
     font-weight: bold;
     text-decoration: underline;
     font-family: "Inter";
+    text-transform: capitalize;
 }
 
 .sidebar>article li {
@@ -264,7 +264,7 @@ form h2 {
 }
 
 .why-trackgenix img {
-    width: 600px;
+    width: 450px;
 }
 
 .why-trackgenix div {
@@ -329,7 +329,7 @@ form h2 {
 
 .contact-area button {
     display: inline;
-    width: 10%;
+    width: 7%;
 }
 
 .contact-area fieldset {
@@ -374,6 +374,7 @@ font-size: 14px;
 .system-story p {
     display: inline block;
     width: 40%;
+    text-align: left;
 }
 
 .our-story>h2 {
@@ -430,10 +431,7 @@ font-size: 14px;
 .bottom-nav {
     border-bottom: 3px solid #373867;
 }
-.bottom-nav-sections ul {
-    margin: 20px 12px 30px 30px;
-    max-width: 2px;
-}
+
 /*-----------------MAIN-------------------*/
 
 /*-----------------FOOTER-------------------*/
@@ -443,9 +441,11 @@ font-size: 14px;
 }
 
 .footer p {
+    display: inline;
     margin: 30px 500px 30px 790px;
     font-size: 25px;
     font-weight: 400;
+    text-align: center;
 }
 
 .footer address {
