@@ -400,15 +400,19 @@ font-size: 14px;
     border-bottom: 2px solid #373867;
 }
 
+#support {
+    margin-right: 0;
+}
 .bottom-nav-sections {
     display: inline-block;
-    width: 29%;
-    margin: 30px;
-}
+    width: auto;
+    margin-right: 36%;}
+
 
 .bottom-nav-sections ul {
     list-style-type: disc;
     padding-left: 40px;
+    margin: 30px 0px 30px 0px;
 }
 
 .bottom-nav-sections h2 {
@@ -422,10 +426,40 @@ font-size: 14px;
     font-weight: 100;
     font-family: "Roboto";
 }
+
+.bottom-nav {
+    border-bottom: 3px solid #373867;
+}
+.bottom-nav-sections ul {
+    margin: 20px 12px 30px 30px;
+    max-width: 2px;
+}
 /*-----------------MAIN-------------------*/
 
 /*-----------------FOOTER-------------------*/
-.footer img {
-    width: 50px;
+
+.footer ul {
+    margin: 30px 500px 30px 900px;
 }
+
+.footer p {
+    margin: 30px 500px 30px 790px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer address {
+    margin: 30px 500px 30px 950px;
+    font-size: 25px;
+}
+
+.footer li {
+    display: inline;
+}
+.footer img {
+    display: inline;
+    width: 70px;
+}
+
+
 /*-----------------FOOTER-------------------*/
