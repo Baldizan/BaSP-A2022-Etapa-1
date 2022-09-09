@@ -1,0 +1,25 @@
+header {
+    margin: 0;
+    background-color: #373867;
+    min-height: 6em;
+    border-radius: 0 0 15px 15px;
+}
+
+header .container {
+    display: flex;
+}
+
+header .container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul {
+    display: none;
+}
+
+header a img {
+    width: 90%;
+    padding-top: 0.2em;
+}

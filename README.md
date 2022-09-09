@@ -13,6 +13,10 @@
 
 >This week's goal is to recreate the __landing page__ of last week's Figma design with CSS.
 
+## Week 04
+
+>This week's goal is to recreate the responsive design with CSS flex, for the __landing page__ based on the Figma design.
+
 ## Authors
 
 *Mariana Alvarez Baldizan*
