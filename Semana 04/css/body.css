@@ -1,31 +1,12 @@
 body {
+    margin: 0;
     font-family: "Roboto", sans-serif, Arial;
+    font-weight: 400;
+    color: #373867;
+    line-height: 20px;
 }
 
-.container {
-    max-width: 480px;
-    margin: 0 auto;
-}
-
-img {
-    width:10px;
-}
-
-p {
-    font-size: 1rem;
-    line-height:1.5em;
-}
-
-h2 {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1.16rem;
-    font-weight: bold;
-}
-
-img {
-
-}
+/* body .container {
+    display: flex;
+    flex-direction: column;
+} */

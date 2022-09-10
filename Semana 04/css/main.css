@@ -1,0 +1,111 @@
+main {
+    margin: 6em 1em 0em 1em;
+    text-align: center;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TRACGENIX BY RR */
+
+.trackgenix-by-RR {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 15;
+    border-bottom: 1px solid #373867;
+}
+
+.trackgenix-by-RR h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.trackgenix-by-RR span {
+    font-weight: bold;
+}
+
+.trackgenix-by-RR h2 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.trackgenix-by-RR a {
+    width: 25%;
+    margin: auto;
+    background-color: #FFF;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* SERVICES */
+
+/* .hours-registry-resources-management .container .row {
+    display: flex;
+    width: auto;
+    max-height: 400px;
+    margin: 20%;
+}
+
+.hours-registry-resources-management .container .column {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    margin: 20%;
+} */
+
+/*
+.container .services{
+    display: flex;
+    flex-direction: column;
+}
+
+.hours-registry-resources-management .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: baseline;
+}
+
+.hours-registry-resources-management .container>img {
+    width: 20%;
+    align-self: flex-end;
+    position: relative;
+    top: 0;
+}
+/* */
+
+/* 
+.hours-registry-resources-management {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 200px;
+}
+
+.hours-registry-resources-management h3 {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.hours-registry-resources-management .container {
+    display: flex;
+
+} */
+
+/* */
+/* hours-registry-resources-management.nth-child(3) {
+    flex-shrink: initial;
+}
+
+.hours-registry-resources-management h3 {
+    border-bottom: 0.5px solid #373867;
+} */
