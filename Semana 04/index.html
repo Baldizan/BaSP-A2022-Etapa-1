@@ -155,78 +155,80 @@
                             <h2>Why Trackgenix?</h2>
                             <section aria-labelledby="productivity-enhancement">
                                 <img src="img/stock-productivity-enhancement.png" alt="Magnificient graphs and scales">
-                                <div>
-                                    <h3 id="productivity-enhancement">Productivity enhancement</h3>
+                                <h3 id="productivity-enhancement">Productivity enhancement</h3>
+                                <div class="container">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet totam earum vitae
                                         aut modi distinctio, reprehenderit numquam quisquam nam!
                                     </p>
+                                    <button>more</button>
                                 </div>
-                                <button>more</button>
                             </section>
                             <section aria-labelledby="work-traceability">
                                 <img src="img/stock-work-traceability.png" alt="Outstanding minimalistic concept art">
-                                <div>
-                                    <h3 id="work-traceability">Work traceability</h3>
+                                <h3 id="work-traceability">Work traceability</h3>
+                                <div class="container">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet totam earum vitae
                                         aut modi distinctio, reprehenderit numquam quisquam nam!
                                     </p>
+                                    <button>more</button>
                                 </div>
-                                <button>more</button>
                             </section>
                             <section aria-labelledby="leadership-teamwork">
                                 <img src="img/stock-leadership-teamwork.png" alt="Hip people relaxing on a curvy line">
-                                <div>
-                                    <h3 id="leadership-teamwork">Leadership teamwork</h3>
+                                <h3 id="leadership-teamwork">Leadership teamwork</h3>
+                                <div class="container">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet totam earum vitae
                                         aut modi distinctio, reprehenderit numquam quisquam nam!
                                     </p>
+                                    <button>more</button>
                                 </div>
-                                <button>more</button>
                             </section>
                             <section aria-labelledby="decision-making">
                                 <img src="img/stock-decision-making.png" alt="Two people in movement, one of which is highlighted">
-                                <div>
-                                    <h3 id="decision-making">Decision making</h3>
+                                <h3 id="decision-making">Decision making</h3>
+                                <div class="container">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet totam earum vitae
                                         aut modi distinctio, reprehenderit numquam quisquam nam!
                                     </p>
+                                    <button>more</button>
                                 </div>
-                                <button>more</button>
                         </div>
                         </section>
                     </article>
-                    <form id="rsi-form">
+                    <form id="rsi-form" class="rsi-form">
                         <h2>Request system information</h2>
-                        <div>
-                            <fieldset>
-                                    <div>
+                        <div class="container">
+                            <fieldset class="container">
+                                    <div class="container">
                                         <label for="rsi-name">Name</label>
                                         <input id="rsi-name" type="text">
                                     </div>
-                                    <div>
+                                    <div class="container">
                                         <label for="rsi-email">Email</label>
                                         <input id="rsi-email" type="email">
                                     </div>
                             </fieldset>
-                            <fieldset>
-                                    <label for="rsi-msg">Message</label>
-                                    <textarea id="rsi-msg" form="rsi-form" cols="60" rows="4"></textarea>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset>
-                                <p>Contact area</p>
-                                <input id="rsi-hr" type="radio" name="contact">
-                                <label for="rsi-hr">Human resources</label>
-                                <input id="rsi-systems" type="radio" name="contact">
-                                <label for="rsi-systems">Systems</label>
-                                <input id="rsi-commercial" type="radio" name="contact">
-                                <label for="rsi-commercial">Commercial</label>
-                            </fieldset>
+                            <div class="rsi-reverse">
+                                <fieldset class="container">
+                                    <div class="container">
+                                        <label for="rsi-msg">Message</label>
+                                        <textarea id="rsi-msg" class="textfield" form="rsi-form" rows="4"></textarea>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <p>Contact area</p>
+                                    <input id="rsi-hr" type="radio" name="contact">
+                                    <label for="rsi-hr">Human resources</label>
+                                    <input id="rsi-systems" type="radio" name="contact">
+                                    <label for="rsi-systems">Systems</label>
+                                    <input id="rsi-commercial" type="radio" name="contact">
+                                    <label for="rsi-commercial">Commercial</label>
+                                </fieldset>
+                            </div>
                             <button>Reset</button>
                             <button type="submit">Submit</button>
                         </div>
