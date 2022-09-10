@@ -46,66 +46,37 @@ main .container {
 
 /* SERVICES */
 
-/* .hours-registry-resources-management .container .row {
+.services section {
     display: flex;
-    width: auto;
-    max-height: 400px;
-    margin: 20%;
+}
+.services img {
+    max-height: 90px;
 }
 
-.hours-registry-resources-management .container .column {
-    display: flex;
-    flex-direction: column;
-    max-height: 400px;
-    margin: 20%;
-} */
-
-/*
-.container .services{
-    display: flex;
-    flex-direction: column;
+.services p {
+    padding-left: 20px;
 }
 
-.hours-registry-resources-management .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: black;
-    justify-content: baseline;
+.services h3 {
+    text-align: start;
+    border-bottom: 1px solid #373867;
 }
 
-.hours-registry-resources-management .container>img {
-    width: 20%;
-    align-self: flex-end;
-    position: relative;
-    top: 0;
-}
-/* */
-
-/* 
-.hours-registry-resources-management {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-height: 200px;
+.services section:nth-child(odd) {
+    flex-direction: row-reverse;
 }
 
-.hours-registry-resources-management h3 {
-    align-self: center;
-    justify-self: center;
+.services section:nth-child(odd) img {
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
-
-.hours-registry-resources-management .container {
-    display: flex;
-
-} */
-
-/* */
-/* hours-registry-resources-management.nth-child(3) {
-    flex-shrink: initial;
+.services section:nth-child(even) img {
+    margin-left: 0px;
+    margin-right: 20px;
 }
 
-.hours-registry-resources-management h3 {
-    border-bottom: 0.5px solid #373867;
-} */
+/* WHY TRACKGENIX */
+ .why-trackgenix img {
+    display: none;
+ }
