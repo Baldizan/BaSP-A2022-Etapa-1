@@ -219,31 +219,41 @@
                                         <textarea id="rsi-msg" class="textfield" form="rsi-form" rows="4"></textarea>
                                     </div>
                                 </fieldset>
-                                <fieldset>
+                                <fieldset class="contact-area">
                                     <p>Contact area</p>
-                                    <input id="rsi-hr" type="radio" name="contact">
-                                    <label for="rsi-hr">Human resources</label>
-                                    <input id="rsi-systems" type="radio" name="contact">
-                                    <label for="rsi-systems">Systems</label>
-                                    <input id="rsi-commercial" type="radio" name="contact">
-                                    <label for="rsi-commercial">Commercial</label>
+                                    <div class="contact-a-radio">
+                                        <div class="input-label-margin">
+                                            <input id="rsi-hr" type="radio" name="contact">
+                                            <label for="rsi-hr">Human resources</label>
+                                        </div>
+                                        <div class="input-label-margin">
+                                            <input id="rsi-systems" type="radio" name="contact">
+                                            <label for="rsi-systems">Systems</label>
+                                        </div>
+                                        <div class="input-label-margin">
+                                            <input id="rsi-commercial" type="radio" name="contact">
+                                            <label for="rsi-commercial">Commercial</label>
+                                        </div>
+                                    </div>
                                 </fieldset>
                             </div>
-                            <button>Reset</button>
-                            <button type="submit">Submit</button>
+                            <div class="rsi-buttons">
+                                <button class="button-reset">Reset</button>
+                                <button class="button-submit" type="submit">Submit</button>
+                            </div>
                         </div>
                     </form>
-                    <article>
+                    <article class="our-story" class="container">
                         <h2>Our story</h2>
                         <section aria-labelledby="our-story-hero">
                             <div>
-                                <img src="img/stock-our-story.png" alt="A cheerful team">
                                 <h3 id="our-story-hero">An easy system</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                                     industry's standard dummy text ever since the 1500s, whenan unknown printer took a galley
                                     of type and scrambled it to make a type specimen book.
                                 </p>
+                                <img src="img/stock-our-story.png" alt="A cheerful team">
                             </div>
                         </section>
                         <section aria-labelledby="our-story-cont">
@@ -255,7 +265,7 @@
                             </p>
                         </section>
                     </article>
-                    <section aria-labelledby="navigation">
+                    <section aria-labelledby="navigation" class="navigation-section">
                         <div id="navigation">
                             <h2>Products</h2>
                             <ul>
@@ -312,7 +322,7 @@
             </main>
             <footer>
                 <div class="container">
-                    <ul>
+                    <ul class="container">
                         <li>
                             <a href="" target="_blank">
                                 <img src="img/logo-facebook-primary.png" alt="Facebook Logo">
