@@ -251,120 +251,133 @@ fieldset>.container {
 
 @media (min-width: 480px) {
 
-.trackgenix-by-RR {
-    flex-direction: row;
-    text-align: start;
+    .trackgenix-by-RR {
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .trackgenix-by-RR h1 {
+        margin-left: 0;
+    }
+
+    .trackgenix-by-RR .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .trackgenix-by-RR img {
+        align-self: stretch;
+        width: 80%;
+        margin-top: 50px;
+        object-fit: cover;
+    }
+
+    .trackgenix-by-RR a {
+        text-align: center;
+        background-color: #FFF;
+        border: 2px solid #373867;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .learn-more {
+        display: none;
+        margin: 0;
+    }
+
+    .tablet-learn-more {
+        display: block;
+        width: fit-content;
+        margin-left: 0;
+        padding: 0.5em 1em;
+    }
+
+    .services-column {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .services .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .services img {
+        margin: 0;
+    }
+
+    .services section:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .services section:nth-child(odd) img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .why-trackgenix img {
+        display: inline;
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .why-trackgenix .container .container {
+        flex-direction: row-reverse;
+    }
+
+    .why-trackgenix .container .container .container {
+        flex-direction: column;
+    }
+
+    .why-trackgenix :is(h3, p) {
+        width: auto;
+    }
+
+    .why-trackgenix section > button {
+        display: none;
+    }
+
+    .why-trackgenix div.container > button {
+        display: inline;
+        margin: 0;
+        align-self: center;
+    }
+
+    .why-trackgenix h3 {
+        width: auto;
+        margin: 0;
+    }
+
+    .contact-a-radio {
+        width: auto;
+        align-self: flex-start;
+    }
+
+    .our-story .container {
+        flex-direction: row;
+    }
+
+    .our-story img {
+        width: 80%;
+    }
+
+    .navigation-section {
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
 
-.trackgenix-by-RR h1 {
-    margin-left: 0;
-}
+@media (min-width: 1024px) {
 
-.trackgenix-by-RR .container {
-    width: 100%;
-    margin: 0;
-}
+    main {
+        margin-left: 2em
+    }
 
-.trackgenix-by-RR  img {
-    align-self: flex-start;
-    width: 80%;
-    margin-top: 50px;
-}
-
-.trackgenix-by-RR a {
-    text-align: center;
-    background-color: #FFF;
-    border: 2px solid #373867;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 400;
-}
-
-.learn-more {
-    display: none;
-    margin: 0;
-}
-
-.tablet-learn-more {
-    display: block;
-    width: fit-content;
-    margin-left: 0;
-    padding: 0.5em 1em;
-}
-
-.services-column {
-    display: flex;
-    flex-direction: row;
-}
-
- .services .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.services img {
-    margin: 0;
-}
-
-.services section:nth-child(odd) {
-    flex-direction: row;
-}
-
-.services section:nth-child(odd) img {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.why-trackgenix img {
-    display: inline;
-    width: 50%;
-    align-self: flex-start;
-}
-
-.why-trackgenix .container .container {
-    flex-direction: row-reverse;
-}
-
-.why-trackgenix .container .container .container {
-    flex-direction: column;
-}
-
-.why-trackgenix :is(h3, p) {
-    width: auto;
-}
-
-.why-trackgenix section > button {
-    display: none;
-}
-
-.why-trackgenix div.container > button {
-    display: inline;
-    margin: 0;
-    align-self: center;
-}
-
-.why-trackgenix h3 {
-    width: auto;
-    margin: 0;
-}
-
-.contact-a-radio {
-    width: auto;
-    align-self: flex-start;
-}
-
-.our-story .container {
-    flex-direction: row;
-}
-
-.our-story img {
-    width: 80%;
-}
-
-.navigation-section {
-    display: flex;
-    justify-content: space-around;
-}
-
+    main .container {
+        float: right;
+        width: 80%;
+    }
 }

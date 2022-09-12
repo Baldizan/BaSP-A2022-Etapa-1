@@ -1,0 +1,90 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #373867;
+    border-radius: 0 0 15px 15px;
+    max-height: auto;
+}
+
+header .container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rr-logo {
+    width: 90%;
+}
+
+header .container .rr-logo > img {
+    width: auto;
+    max-width: 2%;
+    max-width: 75%;
+}
+
+header ul {
+    display: none;
+}
+
+header .container button {
+    max-width: 2rem;
+    max-height: 2rem;
+    padding: 0;
+    background-color: #373867;
+    color: #AACF9B;
+    font-size: 3rem;
+    border: none;
+}
+
+@media (min-width: 480px) {
+
+    header {
+        max-width: 100%;
+        min-width: 480px;
+    }
+
+    .topbar-logos {
+        display: flex;
+        max-width: 100%;
+        list-style: none;
+    }
+
+    .topbar-logos img {
+        width: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .a-rr-logo {
+        width: 250px;
+    }
+
+    header .container button {
+        position: unset;
+        align-self: flex-end;
+        width: 30%;
+        font-size: 2.5rem;
+        max-height: 1.5rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        z-index: 1;
+    }
+}

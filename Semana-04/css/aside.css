@@ -1,0 +1,40 @@
+aside {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    aside {
+        position: fixed;
+        display: flex;
+        text-align: left;
+        top: 62px; left: 1%;
+        background-color: #DFE4DE;
+        max-width: 270px;
+        height: clamp(50% 60vh 80vh);
+        width: 20%;
+        padding: 1em;
+    }
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    aside h2 {
+        margin: 0;
+        font-size: 15px;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+
+    aside li {
+        margin-bottom: 0.75em;
+    }
+
+    aside address li {
+        font-family: "Roboto";
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
