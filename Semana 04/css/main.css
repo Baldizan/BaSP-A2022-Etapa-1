@@ -3,12 +3,6 @@ main {
     text-align: center;
 }
 
-main .container {
-    flex-direction: column;
-}
-
-/* TRACGENIX BY RR */
-
 .trackgenix-by-RR {
     display: flex;
     flex-direction: column;
@@ -17,6 +11,7 @@ main .container {
     font-weight: 15;
     border-bottom: 2px solid #373867;
 }
+
 
 .trackgenix-by-RR h1 {
     font-size: 25px;
@@ -33,8 +28,6 @@ main .container {
 }
 
 .trackgenix-by-RR a {
-    width: 25%;
-    margin: auto;
     background-color: #FFF;
     border: 2px solid #373867;
     border-radius: 5px;
@@ -43,7 +36,14 @@ main .container {
     font-weight: 400;
 }
 
-/* SERVICES */
+.tablet-learn-more {
+    display: none;
+}
+
+.learn-more {
+    margin: auto;
+    width: 25%;
+}
 
 .services {
     border-bottom: 2px solid #373867;
@@ -78,7 +78,6 @@ main .container {
     margin-right: 20px;
 }
 
-/* WHY TRACKGENIX */
 .why-trackgenix img {
 display: none;
 }
@@ -93,14 +92,22 @@ display: none;
 }
 
 .why-trackgenix .container section > .container{
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     text-align: justify;
+}
+
+.why-trackgenix section.container {
+    flex-direction: row;
 }
 
 .why-trackgenix section {
     border-bottom: 1px solid #373867;
     padding-bottom: 20px;
+}
+
+.why-trackgenix div.container > button {
+    display: none;
 }
 
 .why-trackgenix button {
@@ -119,14 +126,12 @@ display: none;
     text-align: justify;
     margin-right: 20px;
 }
-/* REQUEST SYSTEM INFORMATION */
 
 .rsi-form {
     border-bottom: 2px solid #373867;
 }
 
 .rsi-form .container fieldset {
-    width: 100%;
     border: none;
     text-align: start;
 }
@@ -185,21 +190,18 @@ fieldset>.container {
     justify-content: end;
     margin-bottom: 10px;
 }
-
-/* .contact-area label { REVISAR Y REVISAR HTML
-    font-weight: 400;
-} */
-
 .contact-area {
     display: flex;
     flex-direction: column;
 }
+
 .contact-a-radio {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 85%;
+    flex-wrap: initial;
 }
 
 .input-label-margin {
@@ -209,8 +211,6 @@ fieldset>.container {
 .input-label-margin + .input-label-margin {
     margin-left:10px;
 }
-
-/* OUR STORY */
 
 .our-story img {
     max-width: 100%;
@@ -231,7 +231,6 @@ fieldset>.container {
     margin-top: 0;
 }
 
-/* BOTTOM NAV */
 
 .navigation-section {
     text-align: start;
@@ -248,4 +247,124 @@ fieldset>.container {
     font-size: 15px;
     font-weight: 100;
     margin-left: 20px;
+}
+
+@media (min-width: 480px) {
+
+.trackgenix-by-RR {
+    flex-direction: row;
+    text-align: start;
+}
+
+.trackgenix-by-RR h1 {
+    margin-left: 0;
+}
+
+.trackgenix-by-RR .container {
+    width: 100%;
+    margin: 0;
+}
+
+.trackgenix-by-RR  img {
+    align-self: flex-start;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.trackgenix-by-RR a {
+    text-align: center;
+    background-color: #FFF;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.learn-more {
+    display: none;
+    margin: 0;
+}
+
+.tablet-learn-more {
+    display: block;
+    width: fit-content;
+    margin-left: 0;
+    padding: 0.5em 1em;
+}
+
+.services-column {
+    display: flex;
+    flex-direction: row;
+}
+
+ .services .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services img {
+    margin: 0;
+}
+
+.services section:nth-child(odd) {
+    flex-direction: row;
+}
+
+.services section:nth-child(odd) img {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.why-trackgenix img {
+    display: inline;
+    width: 50%;
+    align-self: flex-start;
+}
+
+.why-trackgenix .container .container {
+    flex-direction: row-reverse;
+}
+
+.why-trackgenix .container .container .container {
+    flex-direction: column;
+}
+
+.why-trackgenix :is(h3, p) {
+    width: auto;
+}
+
+.why-trackgenix section > button {
+    display: none;
+}
+
+.why-trackgenix div.container > button {
+    display: inline;
+    margin: 0;
+    align-self: center;
+}
+
+.why-trackgenix h3 {
+    width: auto;
+    margin: 0;
+}
+
+.contact-a-radio {
+    width: auto;
+    align-self: flex-start;
+}
+
+.our-story .container {
+    flex-direction: row;
+}
+
+.our-story img {
+    width: 80%;
+}
+
+.navigation-section {
+    display: flex;
+    justify-content: space-around;
+}
+
 }
