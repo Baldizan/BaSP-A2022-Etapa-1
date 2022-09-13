@@ -323,6 +323,10 @@ fieldset>.container {
         align-self: flex-start;
     }
 
+    .why-trackgenix .desktop-img {
+        display: none;
+    }
+
     .why-trackgenix .container .container {
         flex-direction: row-reverse;
     }
@@ -373,11 +377,61 @@ fieldset>.container {
 @media (min-width: 1024px) {
 
     main {
-        margin-left: 2em
+        margin-left: 23vw ;
+        max-width: 77vw;
     }
 
-    main .container {
-        float: right;
-        width: 80%;
+    .tablet-learn-more {
+        align-self: center;
+        margin: auto;
     }
+
+    .services .container section {
+        margin-right: 100px;
+        max-width: 80%;
+    }
+
+    .services h2 {
+        text-align: start;
+    }
+
+    .why-trackgenix > div.container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .why-trackgenix .desktop-img {
+        display: inline;
+    }
+
+    .why-trackgenix .tablet-img {
+        display: none;
+    }
+
+    .why-trackgenix section {
+        flex-shrink: 0;
+        border-bottom: none;
+    }
+
+    .why-trackgenix {
+        overflow: auto;
+    }
+
+    .why-trackgenix img {
+        width: 450px;
+        order: -1;
+    }
+
+    .why-trackgenix p {
+        width: 450px;
+    }
+    .why-trackgenix h3 {
+        width: fit-content;
+        white-space: wrap;
+    }
+
+    .lead-team {
+        margin-bottom: 50px;
+    }
+
 }

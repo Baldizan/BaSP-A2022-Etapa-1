@@ -87,4 +87,11 @@ header .container button {
     header {
         z-index: 1;
     }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
 }
