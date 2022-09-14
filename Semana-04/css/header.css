@@ -90,8 +90,20 @@ header .container button {
 
     header .container {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
+    }
+
+    header .container button {
+        display: none;
+    }
+
+    .rr-logo {
+        margin-left: 15px;
+    }
+
+    .topbar-logos {
+        margin-right: 10px;
     }
 }
