@@ -2,7 +2,8 @@ console.log("-------------------------EXERCISE 3 : ARRAYS-----------------------
 
 console.log("------------EXERCISE 3.a------------");
 
-var monthsArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
+var monthsArray = [
+    "Enero","Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
     "Septiembre", "Octubre", "Noviembre", "Diciembre"
 ];
 
@@ -30,7 +31,8 @@ console.log(monthsArray.join("-"));
 
 console.log("------------EXERCISE 3.g------------");
 
-var copyMonthsArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
+var copyMonthsArray = [
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
     "Septiembre", "Octubre", "Noviembre", "Diciembre"
 ];
 

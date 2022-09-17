@@ -44,7 +44,8 @@ console.log("------------EXERCISE 2.e------------");
 var indexedVariable = "Lorem ipsum dolor sit amet consectetur";
 var firstSpIndex = indexedVariable.indexOf(" ");
 
-console.log("My string is '" +
+console.log(
+    "My string is '" +
     indexedVariable +
     "' and the first space is indexed at the " +
     firstSpIndex +
