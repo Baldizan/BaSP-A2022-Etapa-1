@@ -2,13 +2,13 @@ console.log("-------------------------EXERCISE 2 : STRINGS----------------------
 
 console.log("------------EXERCISE 2.a------------");
 
-var upperStr = "What does the fox say?"
+var upperStr = "What does the fox say?";
 
 console.log(upperStr.toUpperCase());
 
 console.log("------------EXERCISE 2.b------------");
 
-var subVariable = "Lorem ipsum dolor sit amet consectetur"
+var subVariable = "Lorem ipsum dolor sit amet consectetur";
 var subVariableResult = subVariable.substring(0, 5);
 
 console.log(
@@ -16,23 +16,23 @@ console.log(
     subVariable +
     "' and its first five characters are '" +
     subVariableResult + "'"
-)
+);
 
 console.log("------------EXERCISE 2.c------------");
 
-var subEndVariable = "Lorem ipsum dolor sit amet consectetur"
-var subEndVariableResult = subVariable.substring(35, 38);
+var subEndVariable = "Lorem ipsum dolor sit amet consectetur";
+var subEndVariableResult = subVariable.substring(subVariable.length - 3);
 
 console.log(
     "My variable is '" +
     subEndVariable +
     "' and its last three characters are '" +
     subEndVariableResult + "'"
-)
+);
 
 console.log("------------EXERCISE 2.d------------");
 
-var capitalizedVariable = "lorem ipsum dolor sit amet consectetur"
+var capitalizedVariable = "lorem ipsum dolor sit amet consectetur";
 var resultCapitalizedVariable =
     capitalizedVariable.substring(0, 1).toUpperCase() +
     capitalizedVariable.substring(1, 38).toLowerCase();
@@ -41,24 +41,23 @@ console.log(resultCapitalizedVariable);
 
 console.log("------------EXERCISE 2.e------------");
 
-var indexedVariable = "Lorem ipsum dolor sit amet consectetur"
+var indexedVariable = "Lorem ipsum dolor sit amet consectetur";
 var firstSpIndex = indexedVariable.indexOf(" ");
 
 console.log("My string is '" +
     indexedVariable +
-    "' and the first space is indexed at the "+
+    "' and the first space is indexed at the " +
     firstSpIndex +
     "th column"
 );
 
 console.log("------------EXERCISE 2.f------------");
 
-var longWord = "esternocleidomastoideo"
-var secLongWord = "electroencefalografista"
+var longWords = "esternocleidomastoideo electroencefalografista";
 var capitalizedLongWords =
-    longWord.substring(0, 1).toUpperCase() +
-    longWord.substring(1, 39).toLowerCase() + " " +
-    secLongWord.substring(0, 1).toUpperCase() +
-    secLongWord.substring(1, 42).toLowerCase();
+    longWords.substring(0, 1).toUpperCase() +
+    longWords.substring(1, 23).toLowerCase() +
+    longWords.substring(23, 24).toUpperCase() +
+    longWords.substring(24, 46).toLowerCase();
 
-console.log(capitalizedLongWords);
+ console.log(capitalizedLongWords);
