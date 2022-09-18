@@ -58,7 +58,7 @@ var longWords = "esternocleidomastoideo electroencefalografista";
 var capitalizedLongWords =
     longWords.substring(0, 1).toUpperCase() +
     longWords.substring(1, 23).toLowerCase() +
-    longWords.substring(23, 24).toUpperCase() +
-    longWords.substring(24, 46).toLowerCase();
+    longWords.substring(longWords.indexOf(" ") + 1, longWords.indexOf(" ") + 2).toUpperCase() +
+    longWords.substring(longWords.indexOf(" ") + 2).toLowerCase();
 
  console.log(capitalizedLongWords);

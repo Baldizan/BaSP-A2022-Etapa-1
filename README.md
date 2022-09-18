@@ -16,7 +16,12 @@
 ## Week 04
 
 >This week's goal is to recreate the responsive design with CSS flex, for the __landing page__ based on the Figma design.
->https://baldizan.github.io/BaSP-A2022-Etapa-1/Semana-04/
+[GitHub Pages Semana 04](https://baldizan.github.io/BaSP-A2022-Etapa-1/Semana-04/)
+
+## Week 05
+
+>This week's goal is to complete six JavaScript exercises and to make the respective corrections for last week's goal.
+[GitHub Pages Semana 05](https://baldizan.github.io/BaSP-A2022-Etapa-1/Semana-05/)
 
 ## Authors
 

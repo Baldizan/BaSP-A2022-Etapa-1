@@ -70,11 +70,11 @@ main {
 
 .services section:nth-child(odd) img {
     margin-left: 20px;
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .services section:nth-child(even) img {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 20px;
 }
 
@@ -192,7 +192,6 @@ fieldset>.container {
 
 .contact-a-radio {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 85%;
@@ -291,7 +290,6 @@ fieldset>.container {
 
     .services-column {
         display: flex;
-        flex-direction: row;
     }
 
     .services .container {
@@ -308,12 +306,12 @@ fieldset>.container {
     }
 
     .services section:nth-child(odd) img {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .why-trackgenix img {
-        display: inline;
+        display: block;
         width: 50%;
         align-self: flex-start;
     }
@@ -459,18 +457,4 @@ fieldset>.container {
     .rsi-form:nth-child(2) {
         width: 50%;
     }
-
-    /* .contact-area {
-        display: inline-block;
-        width: 100px;
-    }
-
-    .contact-a-radio{
-        max-width: 22em;
-    }
-
-    .user-choice {
-        display: flex;
-        flex-direction: row;
-    } */
 }
