@@ -4,14 +4,14 @@ aside {
 
 @media (min-width: 1024px) {
     aside {
-        position: fixed;
-        top: 62px; left: 1%;
-        display: flex;
-        height: clamp(50% 60vh 80vh);
-        max-width: 270px;
+        display: block;
+        position: sticky;
+        top: 50px;
+        left: 1%;
+        height: 80%;
+        max-width: 250px;
         width: 20%;
         padding: 1em;
-        max-height: 80%;
         background-color: #DFE4DE;
         border-radius: 0 0 15px 15px;
         text-align: left;

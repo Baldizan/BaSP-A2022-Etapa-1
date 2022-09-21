@@ -8,9 +8,8 @@
     <title>Trackgenix by Radium&nbsp;Rocket</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="Semana 04/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;400;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/main.css">
@@ -19,37 +18,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="container">
-                <a href="index.html" class="a-rr-logo">
-                    <img class="rr-logo" src="img/logo-RR.png" alt="radium rocket logo">
-                </a>
-                <button>&#129171;</button>
-                <ul class="topbar-logos">
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="img/logo-facebook-secondary.png" alt="Facebook Logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="img/logo-instagram-secondary.png" alt="Instagram Logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="img/logo-linkedin-secondary.png" alt="Linkedin Logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="img/logo-twitter-secondary.png" alt="Twitter Logo">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+    <header>
+        <div class="container">
+            <a href="index.html" class="a-rr-logo">
+                <img class="rr-logo" src="img/logo-RR.png" alt="radium rocket logo">
+            </a>
+            <button><img src="img/arrow.png" alt="Arrow Menu"></button>
+            <ul class="topbar-logos">
+                <li>
+                    <a href="" target="_blank">
+                        <img src="img/logo-facebook-secondary.png" alt="Facebook Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="img/logo-instagram-secondary.png" alt="Instagram Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="img/logo-linkedin-secondary.png" alt="Linkedin Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="img/logo-twitter-secondary.png" alt="Twitter Logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
         <aside>
             <div class="container">
                 <article>
@@ -250,7 +249,7 @@
                                     <input id="rsi-email" type="email">
                                 </div>
                             </fieldset>
-                            <fieldset>
+                            <fieldset class="contact-area">
                                 <p>Contact area</p>
                                 <div class="contact-a-radio">
                                     <div class="input-label-margin">
@@ -268,7 +267,7 @@
                             </fieldset>
                         </div>
                         <div class="container">
-                            <fieldset class="container">
+                            <fieldset class="container messagefield">
                                 <div class="container">
                                     <label for="rsi-msg">Message</label>
                                     <textarea id="rsi-msg" class="textfield" form="rsi-form" rows="4"></textarea>
@@ -280,90 +279,92 @@
                             </div>
                         </div>
                     </div>
-            </form>
-            <article class="our-story container">
-                <h2>Our story</h2>
-                <section aria-labelledby="our-story-hero">
-                    <div>
+                </form>
+                <article class="our-story container">
+                    <h2>Our story</h2>
+                    <section aria-labelledby="our-story-hero">
                         <h3>An easy system</h3>
                         <div class="container">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the
+                                    industry's standard dummy text ever since the 1500s, whenan unknown printer took a
+                                    galley
+                                    of type and scrambled it to make a type specimen book.
+                                </p>
+                                <img src="img/stock-our-story.png" alt="A cheerful team">
+                            </div>
+                    </section>
+                    <section aria-labelledby="our-story-cont">
+                        <h3 class="our-goals-h3">Our goals</h3>
+                        <div class="container our-goals">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the
-                                industry's standard dummy text ever since the 1500s, whenan unknown printer took a
-                                galley
-                                of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                                type
+                                and scrambled it to make a type specimen book.
                             </p>
-                            <img src="img/stock-our-story.png" alt="A cheerful team">
+                            <img class="tablet-img" src="img/stock-our-story.png" alt="A cheerful team">
                         </div>
+                    </section>
+                </article>
+                <section aria-labelledby="navigation" class="navigation-section">
+                    <div>
+                        <h2>Products</h2>
+                        <ul>
+                            <li>
+                                <a href="">Fuctionalities</a>
+                            </li>
+                            <li>
+                                <a href="">Downloads</a>
+                            </li>
+                            <li>
+                                <a href="">Integrations</a>
+                            </li>
+                            <li>
+                                <a href="">Extras</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Company</h2>
+                        <ul>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                            <li>
+                                <a href="">Clients</a>
+                            </li>
+                            <li>
+                                <a href="">Resources</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Support</h2>
+                        <ul>
+                            <li>
+                                <a href="">Help</a>
+                            </li>
+                            <li>
+                                <a href="">Tutorials</a>
+                            </li>
+                            <li>
+                                <a href="">API</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </section>
-                <section aria-labelledby="our-story-cont">
-                    <h3>Our goals</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book.
-                    </p>
-                </section>
-            </article>
-            <section aria-labelledby="navigation" class="navigation-section">
-                <div>
-                    <h2>Products</h2>
-                    <ul>
-                        <li>
-                            <a href="">Fuctionalities</a>
-                        </li>
-                        <li>
-                            <a href="">Downloads</a>
-                        </li>
-                        <li>
-                            <a href="">Integrations</a>
-                        </li>
-                        <li>
-                            <a href="">Extras</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Company</h2>
-                    <ul>
-                        <li>
-                            <a href="">About us</a>
-                        </li>
-                        <li>
-                            <a href="">Clients</a>
-                        </li>
-                        <li>
-                            <a href="">Resources</a>
-                        </li>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Support</h2>
-                    <ul>
-                        <li>
-                            <a href="">Help</a>
-                        </li>
-                        <li>
-                            <a href="">Tutorials</a>
-                        </li>
-                        <li>
-                            <a href="">API</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            </div>
+        </main>
     </div>
-    </main>
     <footer>
         <div class="container">
             <ul class="container">

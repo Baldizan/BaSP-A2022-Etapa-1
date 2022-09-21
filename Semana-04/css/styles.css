@@ -5,14 +5,16 @@ body {
     color: #373867;
     line-height: 20px;
 }
+
 * {
     box-sizing: border-box;
+
 }
+
 .container {
     display: flex;
     flex-direction: column;
     max-width: 480px;
-    margin: 0 auto;
 }
 
 p {
@@ -21,18 +23,20 @@ p {
     font-size: 12px;
 }
 
-
 h1 {
     font-size: 30px;
     margin: 20px;
     line-height: 2rem;
 }
+
 h2 {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 2rem;
+    margin-top: 30px;
 }
+
 h3 {
     font-size: 15px;
     line-height: 2rem;
@@ -57,6 +61,7 @@ label {
         margin: 0 auto;
     }
 }
+
 @media (min-width: 768px) {
     .container {
         display: flex;
@@ -67,13 +72,21 @@ label {
 }
 
 @media (min-width: 1024px) {
+    .wrapper {
+        display: flex;
+        width: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     .container {
         display: flex;
         flex-direction: column;
-        max-width: none;
         margin: 0 auto;
     }
-.container-main-aside {
+    .container-main-aside {
         display: flex;
     }
+
 }

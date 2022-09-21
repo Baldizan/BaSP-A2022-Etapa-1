@@ -33,18 +33,16 @@ header ul {
     display: none;
 }
 
-header .container button {
-    max-width: 2rem;
-    max-height: 2rem;
+header .container button,
+header .container button > img {
     padding: 0;
     background-color: #373867;
-    color: #AACF9B;
-    font-size: 3rem;
     border: none;
+    max-height: none;
+    max-width: 20px;
 }
 
 @media (min-width: 480px) {
-
     header {
         max-width: 100%;
         min-width: 480px;
@@ -61,6 +59,7 @@ header .container button {
         margin-right: 10px;
         border-radius: 50%;
     }
+
     header .container {
         flex-direction: row;
         justify-content: space-around;
@@ -73,17 +72,13 @@ header .container button {
     }
 
     header .container button {
-        position: unset;
         align-self: flex-end;
-        width: 30%;
-        font-size: 2.5rem;
-        max-height: 1.5rem;
+        margin-right: 30px;
     }
 
 }
 
 @media (min-width: 1024px) {
-
     header {
         z-index: 1;
     }
