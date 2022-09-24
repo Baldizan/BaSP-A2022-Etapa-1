@@ -1,0 +1,81 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.sign-in {
+    min-width: 50%;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.sign-in :is(div, button, a) {
+    margin: 2em;
+}
+
+.sign-in h1 {
+    text-align: center;
+}
+
+.sign-in a {
+    display: block;
+    border-bottom: 1px solid #373867 ;
+    text-align: center;
+}
+
+.sign-in fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in .si-email, .sign-in .si-pwd {
+    border-bottom: 2px solid #373867;
+    margin-bottom: 0.2em;
+}
+
+.sign-in p {
+    text-align: start;
+    margin-left: 5em;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sign-in img {
+    max-width: 30px;
+    margin-right: 1em;
+}
+
+.sign-in label {
+    display: inline-block;
+    width: auto;
+}
+
+.sign-in input {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.sign-in input[type="checkbox"] {
+    accent-color: #AACE9B;
+    width: auto;
+}
+
+.sign-in button {
+    width: 80%;
+    margin: 0 2em;
+    padding: 0.5em;
+    align-self: center;
+    background-color: #AACE9B;
+    color: #373867;
+    border: none;
+    font-weight: bold;
+}
+
+.pwd-error, .email-error {
+    visibility: hidden;
+}
