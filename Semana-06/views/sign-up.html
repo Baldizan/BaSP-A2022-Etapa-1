@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <script src="../javascript/login.js"></script>
+    <script src="../javascript/sign-up.js"></script>
 </head>
 
 <body>
@@ -95,25 +95,55 @@
             </div>
         </aside>
         <main>
-            <form id="signIn" class="sign-in">
-                <h1>Sign In</h1>
-                <fieldset>
-                    <div id="emailLogin" class="si-email">
-                        <label for="siEmail"><img src="../assets/email-login.png" alt=""></label>
-                        <input id="siEmail" type="email">
+            <form id="employeeSignUp" class="sign-up">
+                <h1>Sign Up</h1>
+                <fieldset class="sign-up-fieldset">
+                    <div id="regUserName" class="su-name">
+                        <label for="suName">First Name</label>
+                        <input id="suName" type="text">
                     </div>
-                    <p id="emailError" class="email-error">Incorrect email</p>
-                    <div id="pwdLogin" class="si-pwd">
-                        <label for="siPassword"><img src="../assets/password-login.png" alt=""></label>
-                        <input id="siPassword" type="password">
+                    <p id="reqNameError" class="su-error">First Name is required</p>
+                    <p id="nameError" class="su-error">First Name cannot contain numbers or special characters</p>
+                    <div id="regLastname" class="su-last-name">
+                        <label for="suLastName">Last Name</label>
+                        <input id="suLastName" type="text">
+                    </div>
+                    <p id="reqLastNameError" class="su-error">Last Name is required</p>
+                    <p id="lastNameError" class="su-error">Last Name cannot contain numbers or special characters</p>
+                    <div id="regEmail" class="su-email">
+                        <label for="suEmail">Email Address</label>
+                        <input id="suEmail" type="email">
+                    </div>
+                    <p id="requiredEmailError" class="su-error">Email Address is required</p>
+                    <p id="regEmailError" class="su-error">Invalid Email Address</p>
+                    <div id="regRepEmail" class="su-rep-email">
+                        <label for="suRepEmail">Email Address</label>
+                        <input id="suRepEmail" type="email">
+                    </div>
+                    <p id="reqRegEmailError" class="su-error">Email Address is required</p>
+                    <p id="regEmailError" class="su-error">Emails do not match</p>
+                    <div id="redAddress" class="su-address">
+                        <label for="suAddress">Address</label>
+                        <input id="suAddress" type="email">
+                    </div>
+                    <p id="reqAddressError" class="su-error">Address is required</p>
+                    <p id="addressError" class="su-error">Address is required</p>
+                    <div id="regPhone" class="su-phone">
+                        <label for="suPhone">Phone</label>
+                        <input id="suPhone" type="text">
+                    </div>
+                    <p id="phoneError" class="phone-error">Phone is required</p>
+                    <div id="regPwd" class="su-pwd">
+                        <label for="suPassword">Password</label>
+                        <input id="suPassword" type="password">
                     </div>
                     <p id="pwdError" class="pwd-error">Incorrect password</p>
-                    <div>
-                        <input id="rememberMe" type="checkbox" name="remember me">
-                        <label for="rememberMe">Remember me</label>
+                    <div id="RepPwdLogin" class="su-rep-pwd">
+                        <label for="repSuPassword">Repeat Password</label>
+                        <input id="repSuPassword" type="password">
                     </div>
-                    <button id="submitButton" type="submit">Continue</button>
-                    <a href="">Don't remember your password?</a>
+                    <p id="repPwdError" class="rep-pwd-error">Passwords do not match</p>
+                    <button>Continue</button>
                 </fieldset>
             </form>
         </main>

@@ -6,6 +6,7 @@ function emailValidation(email) {
 
 function hideEmailErrorMsg() {
     emailError.style.visibility = "hidden";
+    emailLogin.style.borderColor = "#373867";
 }
 
 function alphanumPwd(input) {
@@ -25,6 +26,7 @@ function alphanumPwd(input) {
 
 function hidePwdErrorMsg() {
     pwdError.style.visibility = "hidden";
+    pwdLogin.style.borderColor = "#373867";
 }
 
 window.onload = function () {
@@ -32,21 +34,42 @@ window.onload = function () {
     var emailError = document.getElementById("emailError")
     var pwdInput = document.getElementById("siPassword")
     var pwdError = document.getElementById("pwdError")
+    var emailLogin = document.getElementById("emailLogin")
+    var pwdLogin = document.getElementById("pwdLogin")
+    var subButton = document.getElementById("submitButton")
 
     function emailErrorMsg() {
         if (!emailValidation(emailInput.value)) {
             emailError.style.visibility = "visible";
+            emailLogin.style.borderColor = "red";
+            return "Incorrect email";
+        } else {
+            return "";
         }
     }
 
     function pwdErrorMsg() {
         if (!alphanumPwd(pwdInput.value)) {
             pwdError.style.visibility = "visible"
+            pwdLogin.style.borderColor = "red";
+            return "Incorrect password";
+        } else {
+            return "";
         }
     };
+
+    function submitValidation(event) {
+        if (emailValidation(emailInput.value) && alphanumPwd(pwdInput.value)) {
+            alert("email: " + emailInput.value + " password: " + pwdInput.value)
+        } else {
+            event.preventDefault();
+            alert("Credentials are incorrect:\r\n" + emailErrorMsg() + "\r\n" + pwdErrorMsg())
+        }
+    }
 
     emailInput.addEventListener("blur", emailErrorMsg);
     emailInput.addEventListener("focus", hideEmailErrorMsg);
     pwdInput.addEventListener("blur", pwdErrorMsg);
     pwdInput.addEventListener("focus", hidePwdErrorMsg);
+    subButton.addEventListener("click", submitValidation);
 };
