@@ -23,6 +23,12 @@
 >This week's goal is to complete six JavaScript exercises and to make the respective corrections for last week's goal.
 [GitHub Pages Semana 05](https://baldizan.github.io/BaSP-A2022-Etapa-1/Semana-05/)
 
+## Week 06
+
+>This week's goal is to create the necessary JavaScript validations for the sign-up and login pages designed on Week 01.
+[GitHub Pages Semana 06](https://baldizan.github.io/BaSP-A2022-Etapa-1/Semana-06/)
+
+
 ## Authors
 
 *Mariana Alvarez Baldizan*
