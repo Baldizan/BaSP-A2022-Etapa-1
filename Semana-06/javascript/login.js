@@ -14,10 +14,10 @@ function alphanumPwd(input) {
     var hasLetter = false;
     for (var i = 0; i < input.length; i++) {
         var element = input[i];
-        if (isNaN(element)) {
+        if (element != parseInt(element)) {
             hasLetter = true;
         }
-        if (!isNaN(element)) {
+        if (element == parseInt(element)) {
             hasNumber = true;
         }
     }
@@ -60,7 +60,7 @@ window.onload = function () {
 
     function submitValidation(event) {
         if (emailValidation(emailInput.value) && alphanumPwd(pwdInput.value)) {
-            alert("email: " + emailInput.value + " password: " + pwdInput.value)
+            alert("email: " + emailInput.value + "\r\n" + "password: " + pwdInput.value)
         } else {
             event.preventDefault();
             alert("Credentials are incorrect:\r\n" + emailErrorMsg() + "\r\n" + pwdErrorMsg())

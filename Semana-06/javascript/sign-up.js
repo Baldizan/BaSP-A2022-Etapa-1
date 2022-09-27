@@ -7,7 +7,7 @@ function hasNumber(input) {
     var hasNumber = false;
     for (var i = 0; i < input.length; i++) {
         var element = input[i];
-        if (!isNaN(element)) {
+        if (element == parseInt(element)) {
             hasNumber = true;
         };
     };
@@ -19,10 +19,10 @@ function alphanumPwd(input) {
     var hasLetter = false;
     for (var i = 0; i < input.length; i++) {
         var element = input[i];
-        if (isNaN(element)) {
+        if (element != parseInt(element)) {
             hasLetter = true;
         }
-        if (!isNaN(element)) {
+        if (element == parseInt(element)) {
             hasNumber = true;
         }
     }
@@ -378,29 +378,29 @@ window.onload = function () {
         ) {
             alert(
                 "first name: " +
-                nameInput.value +
+                nameInput.value + "\r\n" +
                 "last name: " +
-                lastNameError.value +
+                lastNameInput.value + "\r\n" +
                 "DNI: " +
-                dniInput.value +
+                dniInput.value + "\r\n" +
                 "Birthdate : " +
-                birthdateInput.value +
+                birthdateInput.value + "\r\n" +
                 "email: " +
-                emailInput.value +
+                emailInput.value + "\r\n" +
                 "confirm email: " +
-                repEmailInput.value +
+                repEmailInput.value + "\r\n" +
                 "address: " +
-                addressInput.value +
+                addressInput.value + "\r\n" +
                 "location: " +
-                locationInput.value +
+                locationInput.value + "\r\n" +
                 "postal code: " +
-                postalCodeInput.value +
+                postalCodeInput.value + "\r\n" +
                 "phone: " +
-                phoneInput.value +
+                phoneInput.value + "\r\n" +
                 "password: " +
-                passwordInput.value +
+                passwordInput.value + "\r\n" +
                 "confirm password: " +
-                repPasswordInput.value
+                repPasswordInput.value + "\r\n"
             );
         } else {
             event.preventDefault();
