@@ -10,6 +10,12 @@ footer .container a > img {
     border-radius: 15%;
 }
 
+footer img:hover,
+footer img:focus {
+    background-color: #37386730;
+    cursor: pointer;
+}
+
 footer ul {
     list-style: none;
 }

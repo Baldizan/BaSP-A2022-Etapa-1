@@ -10,6 +10,7 @@ main {
 .sign-in {
     min-width: 50%;
     box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5rem;
 }
 
 .sign-in :is(div, button, a) {
@@ -65,7 +66,7 @@ main {
     width: auto;
 }
 
-.sign-in button {
+.submit-button {
     width: 80%;
     margin: 0 2em;
     padding: 0.5em;
@@ -74,6 +75,13 @@ main {
     color: #373867;
     border: none;
     font-weight: bold;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #373867;
+    color: #AACE9B;
+    cursor: pointer;
 }
 
 .pwd-error, .email-error {

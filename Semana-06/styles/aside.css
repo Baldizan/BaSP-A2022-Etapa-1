@@ -2,6 +2,12 @@ aside {
     display: none;
 }
 
+aside a:hover,
+aside a:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @media (min-width: 1024px) {
     aside {
         display: block;

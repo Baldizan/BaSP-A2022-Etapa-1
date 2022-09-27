@@ -19,6 +19,12 @@ header a {
     justify-content: center;
 }
 
+header img:hover,
+header img:focus {
+    background-color: #ffffff40;
+    cursor: pointer;
+}
+
 .rr-logo {
     width: 90%;
 }
