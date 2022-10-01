@@ -1,0 +1,553 @@
+main {
+    margin: 0em 1em 0em 1em;
+    text-align: center;
+}
+
+button:hover,
+button:focus {
+    background-color: #49A37B50;
+    color: #373867;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    cursor: pointer;
+}
+
+.trackgenix-by-RR {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 15;
+    border-bottom: 2px solid #373867;
+}
+
+.trackgenix-by-RR h1 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.trackgenix-by-RR span {
+    font-weight: bold;
+}
+
+.trackgenix-by-RR h2 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.trackgenix-by-RR a {
+    background-color: #FFF;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.tablet-learn-more {
+    display: none;
+}
+
+.learn-more {
+    margin: auto;
+    width: 25%;
+}
+
+.services {
+    border-bottom: 2px solid #373867;
+}
+
+.services section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.services img {
+    max-height: 90px;
+}
+
+.services p {
+    padding-left: 20px;
+}
+
+.services h3 {
+    text-align: start;
+    border-bottom: 1px solid #373867;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.services section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.services section:nth-child(even) img {
+    margin-left: 20px;
+}
+
+.services section:nth-child(odd) img {
+    margin-right: 20px;
+}
+
+.why-trackgenix {
+    text-align: start;
+    border-bottom: 2px solid #373867;
+}
+
+.why-trackgenix img {
+    display: none;
+}
+
+.why-trackgenix h3 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.why-trackgenix .container section > .container{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.why-trackgenix section.container {
+    flex-direction: row;
+}
+
+.why-trackgenix section {
+    border-bottom: 1px solid #373867;
+    padding-bottom: 20px;
+}
+
+.why-trackgenix div.container > button {
+    display: none;
+}
+
+.why-trackgenix button {
+    width: 15%;
+    margin: auto;
+    background-color: #FFF;
+    color: #373867;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.why-trackgenix p {
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.rsi-form {
+    border-bottom: 2px solid #373867;
+}
+
+.rsi-form .container fieldset {
+    border: none;
+    text-align: start;
+}
+
+.rsi-form .container fieldset,
+fieldset>.container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rsi-form .messagefield {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.rsi-form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rsi-form input {
+    border-radius: 5px;
+    border: 1px solid #373867;
+}
+
+.textfield {
+    resize: none;
+}
+
+
+.rsi-form p {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.button-reset {
+    background-color: #FFF;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.button-submit {
+    background-color:#373867;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+.rsi-buttons {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-a-radio {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 85%;
+    flex-wrap: initial;
+}
+
+.input-label-margin {
+    display: flex;
+}
+
+.input-label-margin + .input-label-margin {
+    margin-left:10px;
+}
+
+.our-story img {
+    max-width: 100%;
+}
+
+.our-story .tablet-img {
+    display: none;
+}
+
+.our-story {
+    text-align: start;
+    border-bottom: 2px solid #373867;
+}
+
+.our-story h3 {
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.our-story p {
+    margin-top: 0;
+}
+
+.navigation-section {
+    text-align: start;
+    border-bottom: 2px solid #373867;
+}
+
+.navigation-section h2 {
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: start;
+}
+.navigation-section li {
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 20px;
+    list-style: disc;
+}
+
+@media (min-width: 480px) {
+    .trackgenix-by-RR {
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .trackgenix-by-RR h1 {
+        margin-left: 0;
+    }
+
+    .trackgenix-by-RR .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .trackgenix-by-RR img {
+        align-self: stretch;
+        width: 50%;
+        margin-top: 50px;
+        object-fit: cover;
+    }
+
+    .trackgenix-by-RR a {
+        text-align: center;
+        background-color: #FFF;
+        border: 2px solid #373867;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 100px;
+    }
+
+    .learn-more {
+        display: none;
+        margin: 0;
+    }
+
+    .tablet-learn-more {
+        display: block;
+        width: fit-content;
+        margin-left: 0;
+        padding: 0.5em 1em;
+    }
+
+    .services-column {
+        display: flex;
+    }
+
+    .services .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .services img {
+        margin: 0;
+    }
+
+    .services section:nth-child(2n) {
+        flex-direction: row;
+    }
+
+    .services section:nth-child(odd) img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .services section {
+        margin: 30px;
+    }
+
+    .why-trackgenix img {
+        display: block;
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .why-trackgenix .desktop-img {
+        display: none;
+    }
+
+    .why-trackgenix .container .container {
+        flex-direction: row-reverse;
+    }
+
+    .why-trackgenix .container .container .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .why-trackgenix :is(h3, p) {
+        width: auto;
+    }
+
+    .why-trackgenix section > button {
+        display: none;
+    }
+
+    .why-trackgenix div.container > button {
+        display: inline;
+        margin: 0;
+        align-self: center;
+    }
+
+    .why-trackgenix h3 {
+        width: auto;
+        margin: 0;
+    }
+
+    .rsi-form div.container {
+        width: 90%;
+    }
+
+    .rsi-form h2 {
+        text-align: start;
+        margin: 30px;
+    }
+
+    .rsi-form fieldset {
+        width: 100%;
+    }
+
+    .contact-a-radio {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .input-label-margin {
+        margin-right: 20px;
+    }
+
+    .our-story .container {
+        flex-direction: row;
+    }
+
+    .our-story .our-goals {
+        flex-direction: row-reverse;
+    }
+
+    .our-story .our-goals-h3 {
+        text-align: end;
+        margin-right: 30px;
+    }
+
+    .our-story img {
+        width: 80%;
+    }
+
+    .our-story .tablet-img {
+        display: inline-block;
+    }
+
+    .navigation-section {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .tablet-learn-more {
+        align-self: center;
+        margin: auto;
+    }
+
+    .trackgenix-by-RR img {
+        max-width: 50%;
+    }
+
+    .trackgenix-by-RR a {
+        margin: 90px 90px 0 0;
+        align-self: flex-end;
+    }
+
+    .services .container section {
+        margin-right: 100px;
+        max-width: 80%;
+    }
+
+    .services h2 {
+        text-align: start;
+    }
+
+    .why-trackgenix > div.container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .why-trackgenix section.container {
+        width: 45%;
+        margin-inline: 20px;
+    }
+
+    .why-trackgenix .desktop-img {
+        display: inline-block;
+    }
+
+    .why-trackgenix .tablet-img {
+        display: none;
+    }
+
+    .why-trackgenix section {
+        flex-shrink: 0;
+        border-bottom: none;
+    }
+
+    .why-trackgenix div.container > button {
+        margin-top: 10px;
+    }
+
+    .why-trackgenix {
+        overflow: auto;
+    }
+
+    .why-trackgenix img {
+        width: 450px;
+        order: -1;
+    }
+
+    .why-trackgenix p {
+        width: 450px;
+    }
+    .why-trackgenix h3 {
+        width: fit-content;
+        white-space: wrap;
+    }
+
+    .lead-team {
+        margin-bottom: 50px;
+    }
+
+    .user-info {
+        display:flex;
+    }
+
+    .rsi-buttons {
+        display: inline;
+        margin-top: 30px;
+    }
+
+    .rsi-form > div{
+        flex-direction: row;
+    }
+
+    .rsi-form:nth-child(1) {
+        width: 50%;
+    }
+
+    .rsi-form:nth-child(2) {
+        width: 50%;
+    }
+
+    .rsi-form div.container {
+        width: 90%;
+    }
+
+    .contact-area {
+        margin-left: 22px;
+    }
+
+    .our-story img {
+        max-width: 80%;
+    }
+
+    .our-story .tablet-img {
+        display: none;
+    }
+
+    .our-story .our-goals-h3 {
+        text-align: start;
+    }
+}

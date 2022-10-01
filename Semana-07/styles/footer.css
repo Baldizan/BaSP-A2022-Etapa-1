@@ -1,0 +1,32 @@
+footer .container {
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container a > img {
+    width: auto;
+    max-width: 30px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 15%;
+}
+
+footer img:hover,
+footer img:focus {
+    background-color: #37386730;
+    cursor: pointer;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer .container>.container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer :is(address, p) {
+    font-weight: 100;
+    font-size: 15px;
+    font-style: normal;
+}

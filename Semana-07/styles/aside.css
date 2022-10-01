@@ -1,0 +1,56 @@
+aside {
+    display: none;
+}
+
+aside a:hover,
+aside a:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    aside {
+        display: block;
+        position: sticky;
+        top: 50px;
+        left: 1%;
+        height: 80%;
+        max-width: 250px;
+        width: 20%;
+        padding: 1em;
+        background-color: #DFE4DE;
+        border-radius: 0 0 15px 15px;
+        text-align: left;
+    }
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    aside h2 {
+        margin: 10px 0;
+        font-size: 15px;
+        text-transform: capitalize;
+        text-decoration: underline;
+        width: auto;
+        line-height: 1rem;
+    }
+
+    aside li {
+        margin-bottom: 0.75em;
+    }
+
+    aside address li {
+        font-family: "Roboto";
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    aside p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+}

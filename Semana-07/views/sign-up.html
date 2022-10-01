@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix by Radium&nbsp;Rocket</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;400;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/aside.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/sign-up.css">
+        <script src="../javascript/sign-up.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="index.html" class="a-rr-logo">
+                    <img class="rr-logo" src="../assets/logo-RR.png" alt="radium rocket logo">
+                </a>
+                <button type="submit"><img src="../assets/arrow.png" alt="Arrow Menu"></button>
+                <ul class="topbar-logos">
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-facebook-secondary.png" alt="Facebook Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-instagram-secondary.png" alt="Instagram Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-linkedin-secondary.png" alt="Linkedin Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-twitter-secondary.png" alt="Twitter Logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrapper">
+            <aside>
+                <div class="container">
+                    <article>
+                        <h2>Menu</h2>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="sign-up.html">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Get in touch</h2>
+                        <p>
+                            Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem
+                            ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
+                            tempus
+                            aliquam.
+                        </p>
+                        <address>
+                            <ul>
+                                <li>
+                                    <a href="mailto:Contact@Trackgenix.com">&#128231;&nbsp;Contact@Trackgenix.com</a>
+                                </li>
+                                <li>
+                                    <a href="tel:(000) 000-0000">&#128222; (000) 000-0000</a>
+                                </li>
+                                <li>
+                                    &#127968; <span>Somewhere Road #8254
+                                        Nashville, TN 00000-0000</span>
+                                </li>
+                            </ul>
+                        </address>
+                    </article>
+                </div>
+            </aside>
+            <main>
+                <form id="employeeSignUp" class="sign-up">
+                    <h1>Register</h1>
+                    <fieldset class="sign-up-fieldset">
+                        <div class="su-name">
+                            <label for="suName">First Name</label>
+                            <input id="suName" type="text">
+                            <p id="nameError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-last-name">
+                            <label for="suLastName">Last Name</label>
+                            <input id="suLastName" type="text">
+                            <p id="lastNameError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-dni">
+                            <label for="suDni">DNI</label>
+                            <input id="suDni" type="text">
+                            <p id="dniError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-birthdate">
+                            <label for="suBirthdate">Birth Date</label>
+                            <input id="suBirthdate" type="date">
+                            <p id="birthdateError" class="su-error">&nbsp;</p>
+                        </div>
+
+                        <div class="su-email">
+                            <label for="suEmail">Email Address</label>
+                            <input id="suEmail" type="email">
+                            <p id="emailError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-rep-email">
+                            <label for="suRepEmail">Confirm Email Address</label>
+                            <input id="suRepEmail" type="email">
+                            <p id="repEmailError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-address">
+                            <label for="suAddress">Address</label>
+                            <input id="suAddress" type="text">
+                            <p id="addressError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-location">
+                            <label for="suLocation">Location</label>
+                            <input id="suLocation" type="text">
+                            <p id="locationError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-code">
+                            <label for="suCode">Postal Code</label>
+                            <input id="suCode" type="text">
+                            <p id="codeError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-phone">
+                            <label for="suPhone">Phone</label>
+                            <input id="suPhone" type="text">
+                            <p id="phoneError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-pwd">
+                            <label for="suPassword">Password</label>
+                            <input id="suPassword" type="password">
+                            <p id="passwordError" class="su-error">&nbsp;</p>
+                        </div>
+                        <div class="su-rep-pwd">
+                            <label for="suRepPassword">Repeat Password</label>
+                            <input id="suRepPassword" type="password">
+                            <p id="repPasswordError" class="su-error">&nbsp;</p>
+                        </div>
+                        <button id="suSubmit" class="submit-button" type="submit">Continue</button>
+                    </fieldset>
+                </form>
+            </main>
+        </div>
+        <footer>
+            <div class="container">
+                <ul class="container">
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-facebook-primary.png" alt="Facebook Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-instagram-primary.png" alt="Instagram Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-linkedin-primary.png" alt="Linkedin Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="../assets/logo-twitter-primary.png" alt="Twitter Logo">
+                        </a>
+                    </li>
+                </ul>
+                <address>
+                    Rosario, Argentina
+                </address>
+                <p>Copyright &copy; Radium Rocket. All rigths reverved.</p>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
