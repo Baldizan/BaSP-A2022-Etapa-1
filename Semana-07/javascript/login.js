@@ -7,8 +7,8 @@ function emailValidation(email) {
 };
 
 function hideEmailErrorMsg() {
-    emailError.style.visibility = "hidden";
-    emailLogin.style.borderColor = "#373867";
+    emailError.classList.remove("error-visible");
+    emailLogin.classList.remove("inputContainerError");
 }
 
 function alphanumPwd(input) {
@@ -27,8 +27,8 @@ function alphanumPwd(input) {
 }
 
 function hidePwdErrorMsg() {
-    pwdError.style.visibility = "hidden";
-    pwdLogin.style.borderColor = "#373867";
+    pwdError.classList.remove("error-visible");
+    pwdLogin.classList.remove("inputContainerError");
 }
 
 window.onload = function () {
@@ -42,8 +42,8 @@ window.onload = function () {
 
     function emailErrorMsg() {
         if (!emailValidation(emailInput.value)) {
-            emailError.style.visibility = "visible";
-            emailLogin.style.borderColor = "red";
+            emailError.classList.add("error-visible");
+            emailLogin.classList.add("inputContainerError")
             return "Incorrect email";
         } else {
             return "";
@@ -52,8 +52,8 @@ window.onload = function () {
 
     function pwdErrorMsg() {
         if (!alphanumPwd(pwdInput.value)) {
-            pwdError.style.visibility = "visible"
-            pwdLogin.style.borderColor = "red";
+            pwdError.classList.add("error-visible");
+            pwdLogin.classList.add("inputContainerError");
             return "Incorrect password";
         } else {
             return "";

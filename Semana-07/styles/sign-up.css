@@ -29,13 +29,17 @@
     margin-bottom: 0.2em;
 }
 
-.sign-up input {
+.inputDefault {
     width: 100%;
     padding: 0.5em;
     border: 1px solid #373867;
     border-radius: 5px;
     box-shadow: none;
     outline: none;
+}
+
+.inputError {
+    border: 1px solid red;
 }
 
 .submit-button {

@@ -32,9 +32,22 @@ main {
     flex-direction: column;
 }
 
-.sign-in .si-email, .sign-in .si-pwd {
+.inputDefault {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.inputContainer {
     border-bottom: 2px solid #373867;
-    margin-bottom: 0.2em;
+}
+
+.inputContainerError {
+    border-bottom: 2px solid red;
+}
+
+.inputError {
+    border: 1px solid red;
 }
 
 .sign-in p {
@@ -53,12 +66,6 @@ main {
 .sign-in label {
     display: inline-block;
     width: auto;
-}
-
-.sign-in input {
-    border: none;
-    outline: none;
-    width: 90%;
 }
 
 .sign-in input[type="checkbox"] {
@@ -84,6 +91,10 @@ main {
     cursor: pointer;
 }
 
-.pwd-error, .email-error {
+.error-hidden {
     visibility: hidden;
+}
+
+.error-visible {
+    visibility: visible;
 }
