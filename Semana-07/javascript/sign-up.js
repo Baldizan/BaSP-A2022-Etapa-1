@@ -16,6 +16,17 @@ function hasNumber(input) {
     return hasNumber;
 };
 
+function hasLetter(input) {
+    var hasLetter = false;
+    for (var i = 0; i < input.length; i++) {
+        var element = input[i];
+        if (element != parseInt(element)) {
+            hasLetter = true;
+        };
+    };
+    return hasLetter;
+};
+
 function alphanumPwd(input) {
     var hasNumber = false;
     var hasLetter = false;
@@ -118,30 +129,61 @@ function hideRepPasswordErrorMsg() {
 window.onload = function () {
     var nameInput = document.getElementById("suName");
     var nameError = document.getElementById("nameError");
+    if (!nameInput.value) {
+        nameInput.value = localStorage.getItem("First Name");
+    };
     var lastNameInput = document.getElementById("suLastName");
     var lastNameError = document.getElementById("lastNameError");
+    if (!nameInput.value) {
+        nameInput.value = localStorage.getItem("Last Name");
+    };
     var dniInput = document.getElementById("suDni");
     var dniError = document.getElementById("dniError");
+    if (!dniInput.value) {
+        dniInput.value = localStorage.getItem("DNI");
+    };
     var birthdateInput = document.getElementById("suBirthdate");
     var birthdateError = document.getElementById("birthdateError");
+    if (!birthdateInput.value) {
+        birthdateInput.value = localStorage.getItem("Birthday");
+    };
     var emailInput = document.getElementById("suEmail");
     var emailError = document.getElementById("emailError");
+    if (!emailInput.value) {
+        emailInput.value = localStorage.getItem("Email");
+    };
     var repEmailInput = document.getElementById("suRepEmail");
     var repEmailError = document.getElementById("repEmailError");
     var addressInput = document.getElementById("suAddress");
     var addressError = document.getElementById("addressError");
+    if (!addressInput.value) {
+        addressInput.value = localStorage.getItem("Address");
+    };
     var locationInput = document.getElementById("suLocation");
     var locationError = document.getElementById("locationError");
+    if (!locationInput.value) {
+        locationInput.value = localStorage.getItem("Location");
+    };
     var postalCodeInput = document.getElementById("suCode");
     var postalCodeError = document.getElementById("codeError");
+    if (!postalCodeInput.value) {
+        postalCodeInput.value = localStorage.getItem("Post code");
+    };
     var phoneInput = document.getElementById("suPhone");
     var phoneError = document.getElementById("phoneError");
+    if (!phoneInput.value) {
+        phoneInput.value = localStorage.getItem("Phone");
+    };
     var passwordInput = document.getElementById("suPassword");
     var passwordError = document.getElementById("passwordError");
+    if (!passwordInput.value) {
+        passwordInput.value = localStorage.getItem("Password");
+    };
     var repPasswordInput = document.getElementById("suRepPassword");
     var repPasswordError = document.getElementById("repPasswordError");
     var submitButton = document.getElementById("suSubmit");
-
+    var dateSplit = birthdateInput.value.split("-");
+    var dateFormat = dateSplit[1] + "/" + dateSplit[2] + "/" + dateSplit[0]
 
     function nameErrorMsg() {
         if (hasNumber(nameInput.value)) {
@@ -246,14 +288,17 @@ window.onload = function () {
         if (!addressInput.value) {
             addressError.innerHTML = "Address is required";
             addressInput.classList.add("inputError");
-            addressInput.classList.add("inputError");
             return "Address is required";
-        } if (!isNaN(beforeSpace)) {
-            // addressInput.classList.add("inputError");
+        } if (!isNaN(+beforeSpace)) {
+            addressInput.classList.add("inputError");
             addressError.innerHTML = "Input cannot start with numbers. Correct Format: letters and then numbers, separated with a blank space";
             return "Input cannot start with numbers";
-        } if (afterSpace != parseInt(afterSpace)) {
-            // addressInput.classList.add("inputError");
+        } if (afterSpace.length < 1) {
+            addressInput.classList.add("inputError");
+            addressError.innerHTML = "Second part must contain numbers. Correct Format: letters and then numbers, separated with a blank space";
+            return "Input cannot end with alphabetical characters";
+        } if (isNaN(+afterSpace)) {
+            addressInput.classList.add("inputError");
             addressError.innerHTML = "Input cannot end with alphabetical characters. Correct Format: letters and then numbers, separated with a blank space";
             return "Input cannot end with alphabetical characters";
         } if (!addressInput.value.indexOf(" ")) {
@@ -261,7 +306,7 @@ window.onload = function () {
             addressError.innerHTML = "Input must contain a space to separate aphabetical and numerical characters";
             return "Input must contain a space to separate aphabetical and numerical characters";
         } if (addressInput.value.length < 5) {
-            // addressInput.classList.add("inputError");
+            addressInput.classList.add("inputError");
             addressError.innerHTML = "Input must contain at least five (5) characters";
             return "Input must contain at least five (5) characters";
         } else {
@@ -279,10 +324,14 @@ window.onload = function () {
             locationInput.classList.add("inputError");
             locationError.innerHTML = "Location must contain numbers";
             return "Location must contain numbers";
+        } if ((!hasLetter(locationInput.value))) {
+            locationInput.classList.add("inputError");
+            locationError.innerHTML = "Location must contain letters";
+            return "Location must contain numbers";
         } if (locationInput.value.length < 4) {
             locationInput.classList.add("inputError");
-            locationError.innerHTML = "Location must contain at least three (3) characters";
-            return "Location must contain at least three (3) characters";
+            locationError.innerHTML = "Location must contain at least four (4) characters";
+            return "Location must contain at least four (4) characters";
         } else {
             return "";
         }
@@ -364,63 +413,64 @@ window.onload = function () {
         }
     };
 
-    function submitValidation(event) {
-        if (
-            nameErrorMsg() == "" &&
-            lastNameErrorMsg() == "" &&
-            dniErrorMsg() == "" &&
-            birthdateErrorMsg() == "" &&
-            emailErrorMsg() == "" &&
-            repEmailErrorMsg() == "" &&
-            addressErrorMsg() == "" &&
-            locationErrorMsg() == "" &&
-            postalCodeErrorMsg() == "" &&
-            phoneErrorMsg() == "" &&
-            passwordErrorMsg() == "" &&
-            repPasswordErrorMsg() == ""
-        ) {
-            alert(
-                "first name: " +
-                nameInput.value + "\r\n" +
-                "last name: " +
-                lastNameInput.value + "\r\n" +
-                "DNI: " +
-                dniInput.value + "\r\n" +
-                "Birthdate : " +
-                birthdateInput.value + "\r\n" +
-                "email: " +
-                emailInput.value + "\r\n" +
-                "confirm email: " +
-                repEmailInput.value + "\r\n" +
-                "address: " +
-                addressInput.value + "\r\n" +
-                "location: " +
-                locationInput.value + "\r\n" +
-                "postal code: " +
-                postalCodeInput.value + "\r\n" +
-                "phone: " +
-                phoneInput.value + "\r\n" +
-                "password: " +
-                passwordInput.value + "\r\n" +
-                "confirm password: " +
-                repPasswordInput.value + "\r\n"
-            );
+    function submitValidation() {
+        return nameErrorMsg(nameInput.value) == "" &&
+        lastNameErrorMsg(lastNameInput.value) == "" &&
+        dniErrorMsg(dniInput.value) == "" &&
+        birthdateErrorMsg(birthdateInput.value) == "" &&
+        phoneErrorMsg(phoneInput.value) == "" &&
+        addressErrorMsg(addressInput.value) == "" &&
+        locationErrorMsg(locationInput.value) == "" &&
+        postalCodeErrorMsg(postalCodeInput.value) == "" &&
+        emailErrorMsg(emailInput.value) == "" &&
+        passwordErrorMsg(passwordInput.value) == "";
+    };
+
+    function submitSignup(event) {
+        event.preventDefault()
+        if (submitValidation()) {
+            fetch(
+                url +
+                "?name=" + nameInput.value +
+                "&lastName=" + lastNameInput.value +
+                "&dni=" + dniInput.value +
+                "&dob=" + dateFormat +
+                "&phone=" + phoneInput.value +
+                "&address=" + addressInput.value +
+                "&city=" + locationInput.value +
+                "&zip=" + postalCodeInput.value +
+                "&email=" + emailInput.value +
+                "&password=" + passwordInput.value
+                )
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (data.success == true) {
+                        alert(data.msg);
+                        saveCredentialsLocalStorage();
+                    } else {
+                        alert(data.msg);
+                    }
+                }).catch(function (error) {
+                    alert(error);
+                });
         } else {
-            event.preventDefault();
-            alert("Credentials are incorrect:\r\n" +
-                nameErrorMsg() + "\r\n" +
-                lastNameErrorMsg() + "\r\n" +
-                dniErrorMsg() + "\r\n" +
-                birthdateErrorMsg() + "\r\n" +
-                emailErrorMsg() + "\r\n" +
-                repEmailErrorMsg() + "\r\n" +
-                addressErrorMsg() + "\r\n" +
-                locationErrorMsg() + "\r\n" +
-                postalCodeErrorMsg() + "\r\n" +
-                phoneErrorMsg() + "\r\n" +
-                passwordErrorMsg() + "\r\n" +
-                repPasswordErrorMsg())
+            alert("One or more inputs are incorrect")
         }
+    }
+
+    function saveCredentialsLocalStorage() {
+        localStorage.setItem("First Name", nameInput.value);
+        localStorage.setItem("Last Name", lastNameInput.value);
+        localStorage.setItem("DNI", dniInput.value);
+        localStorage.setItem("Birthday", birthdateInput.value);
+        localStorage.setItem("Phone", phoneInput.value);
+        localStorage.setItem("Address", addressInput.value);
+        localStorage.setItem("Location", locationInput.value);
+        localStorage.setItem("Post code", postalCodeInput.value);
+        localStorage.setItem("Email", emailInput.value);
+        localStorage.setItem("Password", passwordInput.value);
     }
 
     nameInput.addEventListener("blur", nameErrorMsg);
@@ -447,5 +497,5 @@ window.onload = function () {
     passwordInput.addEventListener("focus", hidePasswordErrorMsg);
     repPasswordInput.addEventListener("blur", repPasswordErrorMsg);
     repPasswordInput.addEventListener("focus", hideRepPasswordErrorMsg);
-    submitButton.addEventListener("click", submitValidation)
+    submitButton.addEventListener("click", submitSignup);
 }

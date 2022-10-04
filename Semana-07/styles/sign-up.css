@@ -15,6 +15,7 @@
 
 .su-error {
     color: red;
+    font-weight: 500;
 }
 
 .sign-up :is(div, button, a) {
