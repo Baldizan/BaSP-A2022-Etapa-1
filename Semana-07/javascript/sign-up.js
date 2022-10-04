@@ -134,8 +134,8 @@ window.onload = function () {
     };
     var lastNameInput = document.getElementById("suLastName");
     var lastNameError = document.getElementById("lastNameError");
-    if (!nameInput.value) {
-        nameInput.value = localStorage.getItem("Last Name");
+    if (!lastNameInput.value) {
+        lastNameInput.value = localStorage.getItem("Last Name");
     };
     var dniInput = document.getElementById("suDni");
     var dniError = document.getElementById("dniError");
@@ -186,28 +186,36 @@ window.onload = function () {
     var dateFormat = dateSplit[1] + "/" + dateSplit[2] + "/" + dateSplit[0]
 
     function nameErrorMsg() {
-        if (hasNumber(nameInput.value)) {
+        if (!nameInput.value) {
+            nameError.innerHTML = "First Name is required";
+            nameInput.classList.add("inputError");
+            return "DNI is required";
+        } if (hasNumber(nameInput.value)) {
             nameInput.classList.add("inputError");
             nameError.innerHTML = "First Name cannot contain numbers";
             return "First Name cannot contain numbers";
         } if (nameInput.value.length < 2) {
             nameInput.classList.add("inputError");
-            nameError.innerHTML = "First Name is required and must contain at least two (2) characters";
-            return "First Name is required and must contain at least two (2) characters";
+            nameError.innerHTML = "First Name must contain at least two (2) characters";
+            return "First Name must contain at least two (2) characters";
         } else {
             return "";
         }
     };
 
     function lastNameErrorMsg() {
-        if (hasNumber(lastNameInput.value)) {
+        if (!lastNameInput.value) {
+            lastNameError.innerHTML = "Last Name is required";
+            lastNameInput.classList.add("inputError");
+            return "DNI is required";
+        } if (hasNumber(lastNameInput.value)) {
             lastNameInput.classList.add("inputError");
             lastNameError.innerHTML = "Last Name cannot contain numbers";
             return "Last Name cannot contain numbers";
         } if (lastNameInput.value.length < 2) {
             lastNameInput.classList.add("inputError");
-            lastNameError.innerHTML = "Last Name is required and must contain at least two (2) characters";
-            return "Last Name is required and must contain at least two (2) characters";
+            lastNameError.innerHTML = "Last Name must contain at least two (2) characters";
+            return "Last Name must contain at least two (2) characters";
         } else {
             return "";
         }
@@ -218,8 +226,7 @@ window.onload = function () {
             dniError.innerHTML = "DNI is required";
             dniInput.classList.add("inputError");
             return "DNI is required";
-        }
-        if (isNaN(dniInput.value)) {
+        } if (isNaN(dniInput.value)) {
             dniInput.classList.add("inputError");
             dniError.innerHTML = "Invalid - DNI can only contain numbers";
             return "Invalid - DNI can only contain numbers";
@@ -242,8 +249,7 @@ window.onload = function () {
             birthdateError.innerHTML = "Birth Date is required";
             birthdateInput.classList.add("inputError");
             return "Birth Date is required";
-        }
-        if (birthdateInput.value > today) {
+        } if (birthdateInput.value > today) {
             birthdateError.innerHTML = "Invalid Birth Date - Cannot choose future date";
             birthdateInput.classList.add("inputError");
             return "Invalid Birth Date - Cannot choose future date";
@@ -271,8 +277,7 @@ window.onload = function () {
             repEmailError.innerHTML = "Confirming Email Address is required";
             repEmailInput.classList.add("inputError");
             return "Confirming Email Address is required";
-        }
-        if (repEmailInput.value != emailInput.value) {
+        } if (repEmailInput.value != emailInput.value) {
             repEmailError.innerHTML = "Email Address does not match";
             repEmailInput.classList.add("inputError");
             return "Email Address does not match";
@@ -319,8 +324,7 @@ window.onload = function () {
             locationError.innerHTML = "Location is required";
             locationInput.classList.add("inputError");
             return "Location is required";
-        }
-        if ((!hasNumber(locationInput.value))) {
+        } if ((!hasNumber(locationInput.value))) {
             locationInput.classList.add("inputError");
             locationError.innerHTML = "Location must contain numbers";
             return "Location must contain numbers";
@@ -342,8 +346,7 @@ window.onload = function () {
             postalCodeError.innerHTML = "Postal Code is required";
             postalCodeInput.classList.add("inputError");
             return "Postal Code is required";
-        }
-        if (postalCodeInput.value != parseInt(postalCodeInput.value)) {
+        } if (postalCodeInput.value != parseInt(postalCodeInput.value)) {
             postalCodeInput.classList.add("inputError");
             postalCodeError.innerHTML = "Postal Code can only contain numbers";
             return "Postal Code can only contain numbers";
@@ -365,8 +368,7 @@ window.onload = function () {
             phoneError.innerHTML = "Phone is required";
             phoneInput.classList.add("inputError");
             return "Phone is required";
-        }
-        if (phoneInput.value != parseInt(phoneInput.value)) {
+        } if (phoneInput.value != parseInt(phoneInput.value)) {
             phoneInput.classList.add("inputError");
             phoneError.innerHTML = "Phone must only contain numbers";
             return "Phone must only contain numbers";
@@ -384,8 +386,7 @@ window.onload = function () {
             passwordError.innerHTML = "Password is required";
             passwordInput.classList.add("inputError");
             return "Password is required";
-        }
-        if (!alphanumPwd(passwordInput.value)) {
+        } if (!alphanumPwd(passwordInput.value)) {
             passwordInput.classList.add("inputError");
             passwordError.innerHTML = "Password must contain numbers and letters";
             return "Password must contain numbers and letters";
@@ -403,8 +404,7 @@ window.onload = function () {
             repPasswordError.innerHTML = "Confirming Password is required";
             repPasswordInput.classList.add("inputError");
             return "Confirming Password is required";
-        }
-        if (repPasswordInput.value != passwordInput.value) {
+        } if (repPasswordInput.value != passwordInput.value) {
             repPasswordError.innerHTML = "Password does not match";
             repPasswordInput.classList.add("inputError");
             return "Password does not match";
@@ -423,7 +423,9 @@ window.onload = function () {
         locationErrorMsg(locationInput.value) == "" &&
         postalCodeErrorMsg(postalCodeInput.value) == "" &&
         emailErrorMsg(emailInput.value) == "" &&
-        passwordErrorMsg(passwordInput.value) == "";
+        repEmailErrorMsg(repEmailInput.value) == "" &&
+        passwordErrorMsg(passwordInput.value) == "" &&
+        repPasswordErrorMsg(repPasswordInput.value) == "";
     };
 
     function submitSignup(event) {
@@ -450,15 +452,19 @@ window.onload = function () {
                         alert(data.msg);
                         saveCredentialsLocalStorage();
                     } else {
-                        alert(data.msg);
+                        var errorMsg = "Check the errors below:\n"
+                        for(i=0; i < data.errors.length; i++){
+                            errorMsg += data.errors[i].msg + "\n";
+                        };
+                        alert(errorMsg);
                     }
                 }).catch(function (error) {
                     alert(error);
                 });
         } else {
-            alert("One or more inputs are incorrect")
+            alert("One or more inputs are incorrect");
         }
-    }
+    };
 
     function saveCredentialsLocalStorage() {
         localStorage.setItem("First Name", nameInput.value);
