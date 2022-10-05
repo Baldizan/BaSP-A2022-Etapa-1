@@ -296,15 +296,18 @@ window.onload = function () {
             return "Address is required";
         } if (!isNaN(+beforeSpace)) {
             addressInput.classList.add("inputError");
-            addressError.innerHTML = "Input cannot start with numbers. Correct Format: letters and then numbers, separated with a blank space";
+            addressError.innerHTML = "Input cannot start with numbers." +
+                "Correct Format: letters and then numbers, separated with a blank space";
             return "Input cannot start with numbers";
         } if (afterSpace.length < 1) {
             addressInput.classList.add("inputError");
-            addressError.innerHTML = "Second part must contain numbers. Correct Format: letters and then numbers, separated with a blank space";
+            addressError.innerHTML = "Second part must contain numbers." +
+                "Correct Format: letters and then numbers, separated with a blank space";
             return "Input cannot end with alphabetical characters";
         } if (isNaN(+afterSpace)) {
             addressInput.classList.add("inputError");
-            addressError.innerHTML = "Input cannot end with alphabetical characters. Correct Format: letters and then numbers, separated with a blank space";
+            addressError.innerHTML = "Input cannot end with alphabetical characters." +
+                "Correct Format: letters and then numbers, separated with a blank space";
             return "Input cannot end with alphabetical characters";
         } if (!addressInput.value.indexOf(" ")) {
             addressInput.classList("inputError");
@@ -415,17 +418,17 @@ window.onload = function () {
 
     function submitValidation() {
         return nameErrorMsg(nameInput.value) == "" &&
-        lastNameErrorMsg(lastNameInput.value) == "" &&
-        dniErrorMsg(dniInput.value) == "" &&
-        birthdateErrorMsg(birthdateInput.value) == "" &&
-        phoneErrorMsg(phoneInput.value) == "" &&
-        addressErrorMsg(addressInput.value) == "" &&
-        locationErrorMsg(locationInput.value) == "" &&
-        postalCodeErrorMsg(postalCodeInput.value) == "" &&
-        emailErrorMsg(emailInput.value) == "" &&
-        repEmailErrorMsg(repEmailInput.value) == "" &&
-        passwordErrorMsg(passwordInput.value) == "" &&
-        repPasswordErrorMsg(repPasswordInput.value) == "";
+            lastNameErrorMsg(lastNameInput.value) == "" &&
+            dniErrorMsg(dniInput.value) == "" &&
+            birthdateErrorMsg(birthdateInput.value) == "" &&
+            phoneErrorMsg(phoneInput.value) == "" &&
+            addressErrorMsg(addressInput.value) == "" &&
+            locationErrorMsg(locationInput.value) == "" &&
+            postalCodeErrorMsg(postalCodeInput.value) == "" &&
+            emailErrorMsg(emailInput.value) == "" &&
+            repEmailErrorMsg(repEmailInput.value) == "" &&
+            passwordErrorMsg(passwordInput.value) == "" &&
+            repPasswordErrorMsg(repPasswordInput.value) == "";
     };
 
     function submitSignup(event) {
@@ -443,7 +446,7 @@ window.onload = function () {
                 "&zip=" + postalCodeInput.value +
                 "&email=" + emailInput.value +
                 "&password=" + passwordInput.value
-                )
+            )
                 .then(function (response) {
                     return response.json();
                 })
@@ -453,7 +456,7 @@ window.onload = function () {
                         saveCredentialsLocalStorage();
                     } else {
                         var errorMsg = "Check the errors below:\n"
-                        for(i=0; i < data.errors.length; i++){
+                        for (i = 0; i < data.errors.length; i++) {
                             errorMsg += data.errors[i].msg + "\n";
                         };
                         alert(errorMsg);
